@@ -17,7 +17,10 @@ Trends in rPPG. Coming soon...
 | 11  |  HRVCam          |2021| 16             | --           | --                                                                                                                                                                                                                                                                               | https://rice.app.box.com/s/noy6vn7k5g5bfvl9o6ekcjmgc9ng4yel | https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-26/issue-02/022707/HRVCam-robust-camera-based-measurement-of-heart-rate-variability/10.1117/1.JBO.26.2.022707.full?SSO=1&tab=ArticleLink|
 | 12  |  NICU          |2021| 257            | 1130         | --                                                                                                                                                                                                                                                                               | apply                                                       |https://www.sciencedirect.com/science/article/abs/pii/S0952197621002955?via%3Dihub|
 | 13  |  COHFACE   |2017| 40             | 160          |https://www.idiap.ch/en/dataset/cohface|https://zenodo.org/record/4081054#.Y5miz9JBzJU|https://github.com/bioidiap/bob.db.cohface https://arxiv.org/abs/1709.00962|
-
+| 14  |LGI-PPGI|2018|25|100|https://github.com/partofthestars/LGI-PPGI-DB|https://github.com/partofthestars/LGI-PPGI-DB|https://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w27/Pilz_Local_Group_Invariance_CVPR_2018_paper.pdf|
+| 15  |V4V|2021|--|--|https://vision4vitals.github.io/|https://vision4vitals.github.io/v4v_dataset.html|https://arxiv.org/abs/2109.10471|
+|16|ECG-Fitness|2018|17|207|https://cmp.felk.cvut.cz/~spetlrad/ecg-fitness/|apply|https://cmp.felk.cvut.cz/~spetlrad/ecg-fitness/visual-heart-rate.pdf|
+|17|Vicar-PPG-2|2020|10|400|https://docs.google.com/forms/d/e/1FAIpQLScwnW_D5M4JVovPzpxA0Bf1ZCTaG5vh7sYu48I0MVSpgltvdw/viewform|apply|https://arxiv.org/abs/2012.15846|
 # Toolbox
 |github| Paper URL                                          |
 |---|----------------------------------------------------|
