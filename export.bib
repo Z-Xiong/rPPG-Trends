@@ -1,0 +1,1133 @@
+@article{Liu2020,
+   abstract = {There are large individual differences in physiological processes, making designing personalized health sensing algorithms challenging. Existing machine learning systems struggle to generalize well to unseen subjects or contexts, especially in video-based physiological measurement. Although fine-tuning for a user might address this issue, it is difficult to collect large sets of training data for specific individuals because supervised algorithms require medical-grade sensors for generating the training target. Therefore, learning personalized or customized models from a small number of unlabeled samples is very attractive as it would allow fast calibrations. In this paper, we present a novel unsupervised meta-learning approach called MetaPhys for learning personalized cardiac signals from 18-seconds of unlabeled video data. We evaluate our proposed approach on two benchmark datasets and demonstrate superior performance in cross-dataset evaluation with substantial reductions (42% to 44%) in errors compared with state-of-the-art approaches. Visualization of attention maps and ablation experiments reveal how the model adapts to each subject and why our proposed approach leads to these improvements. We have also demonstrated our proposed method significantly helps reduce the bias in skin type.},
+   author = {Xin Liu and Ziheng Jiang and Josh Fromm and Xuhai Xu and Shwetak Patel and Daniel McDuff},
+   issue = {2},
+   month = {10},
+   title = {MetaPhys: Unsupervised Few-Shot Adaptation for Non-Contact Physiological Measurement},
+   url = {http://arxiv.org/abs/2010.01773 https://github.com/anonymous0paper/MetaPhys},
+   year = {2020},
+}
+@article{Yang2022,
+   abstract = {From human physiology to environmental evolution, important processes in nature often exhibit meaningful and strong periodic or quasi-periodic changes. Due to their inherent label scarcity, learning useful representations for periodic tasks with limited or no supervision is of great benefit. Yet, existing self-supervised learning (SSL) methods overlook the intrinsic periodicity in data, and fail to learn representations that capture periodic or frequency attributes. In this paper, we present SimPer, a simple contrastive SSL regime for learning periodic information in data. To exploit the periodic inductive bias, SimPer introduces customized augmentations, feature similarity measures, and a generalized contrastive loss for learning efficient and robust periodic representations. Extensive experiments on common real-world tasks in human behavior analysis, environmental sensing, and healthcare domains verify the superior performance of SimPer compared to state-of-the-art SSL methods, highlighting its intriguing properties including better data efficiency, robustness to spurious correlations, and generalization to distribution shifts. Code and data are available at: https://github.com/YyzHarry/SimPer.},
+   author = {Yuzhe Yang and Xin Liu and Jiang Wu and Silviu Borac and Dina Katabi and Ming-Zher Poh and Daniel McDuff},
+   month = {10},
+   title = {SimPer: Simple Self-Supervised Learning of Periodic Targets},
+   year = {2022},
+}
+@inproceedings{Ba2022,
+   author = {Yunhao Ba and Zhen Wang and Kerim Doruk Karinca and Oyku Deniz Bozkurt and Achuta Kadambi},
+   doi = {10.1109/ICCP54855.2022.9887649},
+   isbn = {978-1-6654-5851-1},
+   journal = {2022 IEEE International Conference on Computational Photography (ICCP)},
+   month = {8},
+   pages = {1-12},
+   publisher = {IEEE},
+   title = {Style Transfer with Bio-realistic Appearance Manipulation for Skin-tone Inclusive rPPG},
+   url = {https://docs.google.com/presentation/d/10169VJOuxUaLblFSPgLyg8ir39tEXze08YcjekCHO7c/edit#slide=id.g13ff05f4cf0_0_506 https://github.com/UCLA-VMG/rPPG_augmentation},
+   year = {2022},
+}
+@article{Niu2020,
+   abstract = {Remote physiological measurements, e.g., remote photoplethysmography (rPPG) based heart rate (HR), heart rate variability (HRV) and respiration frequency (RF) measuring, are playing more and more important roles under the application scenarios where contact measurement is inconvenient or impossible. Since the amplitude of the physiological signals is very small, they can be easily affected by head movements, lighting conditions, and sensor diversities. To address these challenges, we propose a cross-verified feature disentangling strategy to disentangle the physiological features with non-physiological representations, and then use the distilled physiological features for robust multi-task physiological measurements. We first transform the input face videos into a multi-scale spatial-temporal map (MSTmap), which can suppress the irrelevant background and noise features while retaining most of the temporal characteristics of the periodic physiological signals. Then we take pairwise MSTmaps as inputs to an autoencoder architecture with two encoders (one for physiological signals and the other for non-physiological information) and use a cross-verified scheme to obtain physiological features disentangled with the non-physiological features. The disentangled features are finally used for the joint prediction of multiple physiological signals like average HR values and rPPG signals. Comprehensive experiments on different large-scale public datasets of multiple physiological measurement tasks as well as the cross-database testing demonstrate the robustness of our approach.},
+   author = {Xuesong Niu and Zitong Yu and Hu Han and Xiaobai Li and Shiguang Shan and Guoying Zhao},
+   month = {7},
+   title = {Video-based Remote Physiological Measurement via Cross-verified Feature Disentangling},
+   year = {2020},
+}
+@article{Song2020,
+   abstract = {Remote photoplethysmography (rPPG) is a non-contact technique for measuring cardiac signals from facial videos. High-quality rPPG pulse signals are urgently demanded in many fields, such as health monitoring and emotion recognition. However, most of the existing rPPG methods can only be used to get average heart rate (HR) values due to the limitation of inaccurate pulse signals. In this paper, a new framework based on generative adversarial network, called PulseGAN, is introduced to generate realistic rPPG pulse signals through denoising the chrominance signals. Considering that the cardiac signal is quasi-periodic and has apparent time-frequency characteristics, the error losses defined in time and spectrum domains are both employed with the adversarial loss to enforce the model generating accurate pulse waveforms as its reference. The proposed framework is tested on the public UBFC-RPPG database in both within-database and cross-database configurations. The results show that the PulseGAN framework can effectively improve the waveform quality, thereby enhancing the accuracy of HR, the heart rate variability (HRV) and the interbeat interval (IBI). The proposed method achieves the best performance compared to the denoising autoencoder (DAE) and CHROM, with the mean absolute error of AVNN (the average of all normal-to-normal intervals) improving 20.85% and 41.19%, and the mean absolute error of SDNN (the standard deviation of all NN intervals) improving 20.28% and 37.53%, respectively, in the cross-database test. This framework can be easily extended to other existing deep learning based rPPG methods, which is expected to expand the application scope of rPPG techniques.},
+   author = {Rencheng Song and Huan Chen and Juan Cheng and Chang Li and Yu Liu and Xun Chen},
+   month = {6},
+   title = {PulseGAN: Learning to generate realistic pulse waveforms in remote photoplethysmography},
+   year = {2020},
+}
+@article{Sun2022,
+   abstract = {Video-based remote physiological measurement utilizes face videos to measure the blood volume change signal, which is also called remote photoplethysmography (rPPG). Supervised methods for rPPG measurements achieve state-of-the-art performance. However, supervised rPPG methods require face videos and ground truth physiological signals for model training. In this paper, we propose an unsupervised rPPG measurement method that does not require ground truth signals for training. We use a 3DCNN model to generate multiple rPPG signals from each video in different spatiotemporal locations and train the model with a contrastive loss where rPPG signals from the same video are pulled together while those from different videos are pushed away. We test on five public datasets, including RGB videos and NIR videos. The results show that our method outperforms the previous unsupervised baseline and achieves accuracies very close to the current best supervised rPPG methods on all five datasets. Furthermore, we also demonstrate that our approach can run at a much faster speed and is more robust to noises than the previous unsupervised baseline. Our code is available at https://github.com/zhaodongsun/contrast-phys.},
+   author = {Zhaodong Sun and Xiaobai Li},
+   month = {8},
+   title = {Contrast-Phys: Unsupervised Video-based Remote Physiological Measurement via Spatiotemporal Contrast},
+   year = {2022},
+}
+@article{Yue2022,
+   abstract = {Video-based remote physiological measurement aims to estimate remote photoplethysmography (rPPG) signals from human face videos and then measure multiple vital signs (e.g. heart rate, respiration frequency) from rPPG signals. Recent approaches achieve it by training deep neural networks, which normally require abundant face videos and synchronously recorded photoplethysmography (PPG) signals for supervision. However, the collection of these annotated corpora is uneasy in practice. In this paper, we introduce a novel frequency-inspired self-supervised framework that learns to estimate rPPG signals from face videos without the need of ground truth PPG signals. Given a video sample, we first augment it into multiple positive/negative samples which contain similar/dissimilar signal frequencies to the original one. Specifically, positive samples are generated using spatial augmentation. Negative samples are generated via a learnable frequency augmentation module, which performs non-linear signal frequency transformation on the input without excessively changing its visual appearance. Next, we introduce a local rPPG expert aggregation module to estimate rPPG signals from augmented samples. It encodes complementary pulsation information from different face regions and aggregate them into one rPPG prediction. Finally, we propose a series of frequency-inspired losses, i.e. frequency contrastive loss, frequency ratio consistency loss, and cross-video frequency agreement loss, for the optimization of estimated rPPG signals from multiple augmented video samples and across temporally neighboring video samples. We conduct rPPG-based heart rate, heart rate variability and respiration frequency estimation on four standard benchmarks. The experimental results demonstrate that our method improves the state of the art by a large margin.},
+   author = {Zijie Yue and Miaojing Shi and Shuai Ding},
+   month = {10},
+   title = {Video-based Remote Physiological Measurement via Self-supervised Learning},
+   year = {2022},
+}
+@article{Yu2019,
+   abstract = {Recent studies demonstrated that the average heart rate (HR) can be measured from facial videos based on non-contact remote photoplethysmography (rPPG). However for many medical applications (e.g., atrial fibrillation (AF) detection) knowing only the average HR is not sufficient, and measuring precise rPPG signals from face for heart rate variability (HRV) analysis is needed. Here we propose an rPPG measurement method, which is the first work to use deep spatio-temporal networks for reconstructing precise rPPG signals from raw facial videos. With the constraint of trend-consistency with ground truth pulse curves, our method is able to recover rPPG signals with accurate pulse peaks. Comprehensive experiments are conducted on two benchmark datasets, and results demonstrate that our method can achieve superior performance on both HR and HRV levels comparing to the state-of-the-art methods. We also achieve promising results of using reconstructed rPPG signals for AF detection and emotion recognition.},
+   author = {Zitong Yu and Xiaobai Li and Guoying Zhao},
+   month = {5},
+   title = {Remote Photoplethysmograph Signal Measurement from Facial Videos Using Spatio-Temporal Networks},
+   year = {2019},
+}
+@article{Li2022,
+   abstract = {Remote photoplethysmography (rPPG) enables non-contact heart rate (HR) estimation from facial videos which gives significant convenience compared with traditional contact-based measurements. In the real-world long-term health monitoring scenario, the distance of the participants and their head movements usually vary by time, resulting in the inaccurate rPPG measurement due to the varying face resolution and complex motion artifacts. Different from the previous rPPG models designed for a constant distance between camera and participants, in this paper, we propose two plug-and-play blocks (i.e., physiological signal feature extraction block (PFE) and temporal face alignment block (TFA)) to alleviate the degradation of changing distance and head motion. On one side, guided with representative-area information, PFE adaptively encodes the arbitrary resolution facial frames to the fixed-resolution facial structure features. On the other side, leveraging the estimated optical flow, TFA is able to counteract the rPPG signal confusion caused by the head movement thus benefit the motion-robust rPPG signal recovery. Besides, we also train the model with a cross-resolution constraint using a two-stream dual-resolution framework, which further helps PFE learn resolution-robust facial rPPG features. Extensive experiments on three benchmark datasets (UBFC-rPPG, COHFACE and PURE) demonstrate the superior performance of the proposed method. One highlight is that with PFE and TFA, the off-the-shelf spatio-temporal rPPG models can predict more robust rPPG signals under both varying face resolution and severe head movement scenarios. The codes are available at https://github.com/LJW-GIT/Arbitrary_Resolution_rPPG.},
+   author = {Jianwei Li and Zitong Yu and Jingang Shi},
+   month = {11},
+   title = {Learning Motion-Robust Remote Photoplethysmography through Arbitrary Resolution Videos},
+   year = {2022},
+}
+@article{Gudi2020,
+   abstract = {Remote photo-plethysmography (rPPG) uses a camera to estimate a person's heart rate (HR). Similar to how heart rate can provide useful information about a person's vital signs, insights about the underlying physio/psychological conditions can be obtained from heart rate variability (HRV). HRV is a measure of the fine fluctuations in the intervals between heart beats. However, this measure requires temporally locating heart beats with a high degree of precision. We introduce a refined and efficient real-time rPPG pipeline with novel filtering and motion suppression that not only estimates heart rates, but also extracts the pulse waveform to time heart beats and measure heart rate variability. This unsupervised method requires no rPPG specific training and is able to operate in real-time. We also introduce a new multi-modal video dataset, VicarPPG 2, specifically designed to evaluate rPPG algorithms on HR and HRV estimation. We validate and study our method under various conditions on a comprehensive range of public and self-recorded datasets, showing state-of-the-art results and providing useful insights into some unique aspects. Lastly, we make available CleanerPPG, a collection of human-verified ground truth peak/heart-beat annotations for existing rPPG datasets. These verified annotations should make future evaluations and benchmarking of rPPG algorithms more accurate, standardized and fair.},
+   author = {Amogh Gudi and Marian Bittner and Jan van Gemert},
+   doi = {10.3390/app10238630},
+   issue = {23},
+   journal = {Applied Sciences (Switzerland)},
+   keywords = {Clean ground truth,Heart rate variability,Remote photoplethysmography,Unsupervised},
+   month = {12},
+   pages = {1-24},
+   publisher = {MDPI AG},
+   title = {Real-time Webcam Heart-Rate and Variability Estimation with Clean Ground Truth for Evaluation},
+   volume = {10},
+   url = {http://arxiv.org/abs/2012.15846 http://dx.doi.org/10.3390/app10238630},
+   year = {2020},
+}
+@article{Spetlik2018,
+   author = {Radim Spetlik and Vojtech Franc and Jan Cech and Jiri Matas},
+   title = {Visual Heart Rate Estimation with Convolutional Neural Network},
+   year = {2018},
+}
+@inproceedings{Pilz2018,
+   author = {Christian S. Pilz and Sebastian Zaunseder and Jarek Krajewski and Vladimir Blazek},
+   doi = {10.1109/CVPRW.2018.00172},
+   isbn = {978-1-5386-6100-0},
+   journal = {2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+   month = {6},
+   pages = {1335-13358},
+   publisher = {IEEE},
+   title = {Local Group Invariance for Heart Rate Estimation from Face Videos in the Wild},
+   year = {2018},
+}
+@article{Revanur2021,
+   abstract = {Telehealth has the potential to offset the high demand for help during public health emergencies, such as the COVID-19 pandemic. Remote Photoplethysmography (rPPG) - the problem of non-invasively estimating blood volume variations in the microvascular tissue from video - would be well suited for these situations. Over the past few years a number of research groups have made rapid advances in remote PPG methods for estimating heart rate from digital video and obtained impressive results. How these various methods compare in naturalistic conditions, where spontaneous behavior, facial expressions, and illumination changes are present, is relatively unknown. To enable comparisons among alternative methods, the 1st Vision for Vitals Challenge (V4V) presented a novel dataset containing high-resolution videos time-locked with varied physiological signals from a diverse population. In this paper, we outline the evaluation protocol, the data used, and the results. V4V is to be held in conjunction with the 2021 International Conference on Computer Vision.},
+   author = {Ambareesh Revanur and Zhihua Li and Umur A. Ciftci and Lijun Yin and Laszlo A. Jeni},
+   month = {9},
+   title = {The First Vision For Vitals (V4V) Challenge for Non-Contact Video-Based Physiological Estimation},
+   year = {2021},
+}
+@article{Kim2021,
+   abstract = {<p>In general, facial image-based remote photoplethysmography (rPPG) methods use color-based and patch-based region-of-interest (ROI) selection methods to estimate the blood volume pulse (BVP) and beats per minute (BPM). Anatomically, the thickness of the skin is not uniform in all areas of the face, so the same diffuse reflection information cannot be obtained in each area. In recent years, various studies have presented experimental results for their ROIs but did not provide a valid rationale for the proposed regions. In this paper, to see the effect of skin thickness on the accuracy of the rPPG algorithm, we conducted an experiment on 39 anatomically divided facial regions. Experiments were performed with seven algorithms (CHROM, GREEN, ICA, PBV, POS, SSR, and LGI) using the UBFC-rPPG and LGI-PPGI datasets considering 29 selected regions and two adjusted regions out of 39 anatomically classified regions. We proposed a BVP similarity evaluation metric to find a region with high accuracy. We conducted additional experiments on the TOP-5 regions and BOT-5 regions and presented the validity of the proposed ROIs. The TOP-5 regions showed relatively high accuracy compared to the previous algorithm’s ROI, suggesting that the anatomical characteristics of the ROI should be considered when developing a facial image-based rPPG algorithm.</p>},
+   author = {Dae-Yeol Kim and Kwangkee Lee and Chae-Bong Sohn},
+   doi = {10.3390/s21237923},
+   issn = {1424-8220},
+   issue = {23},
+   journal = {Sensors},
+   month = {11},
+   pages = {7923},
+   title = {Assessment of ROI Selection for Facial Video-Based rPPG},
+   volume = {21},
+   year = {2021},
+}
+@article{Heusch2017,
+   abstract = {This paper studies the problem of reproducible research in remote photoplethysmography (rPPG). Most of the work published in this domain is assessed on privately-owned databases, making it difficult to evaluate proposed algorithms in a standard and principled manner. As a consequence, we present a new, publicly available database containing a relatively large number of subjects recorded under two different lighting conditions. Also, three state-of-the-art rPPG algorithms from the literature were selected, implemented and released as open source free software. After a thorough, unbiased experimental evaluation in various settings, it is shown that none of the selected algorithms is precise enough to be used in a real-world scenario.},
+   author = {Guillaume Heusch and André Anjos and Sébastien Marcel},
+   month = {9},
+   title = {A Reproducible Study on Remote Heart Rate Measurement},
+   year = {2017},
+}
+@article{Huang2021,
+   author = {Bin Huang and Weihai Chen and Chun-Liang Lin and Chia-Feng Juang and Yuanping Xing and Yanting Wang and Jianhua Wang},
+   doi = {10.1016/j.engappai.2021.104447},
+   issn = {09521976},
+   journal = {Engineering Applications of Artificial Intelligence},
+   month = {11},
+   pages = {104447},
+   title = {A neonatal dataset and benchmark for non-contact neonatal heart rate monitoring based on spatio-temporal neural networks},
+   volume = {106},
+   year = {2021},
+}
+@article{Pai2021,
+   author = {Amruta Pai and Ashok Veeraraghavan and Ashutosh Sabharwal},
+   doi = {10.1117/1.JBO.26.2.022707},
+   issn = {1083-3668},
+   issue = {02},
+   journal = {Journal of Biomedical Optics},
+   month = {2},
+   title = {HRVCam: robust camera-based measurement of heart rate variability},
+   volume = {26},
+   year = {2021},
+}
+@article{Koelstra2012,
+   author = {S. Koelstra and C. Muhl and M. Soleymani and Jong-Seok Lee and A. Yazdani and T. Ebrahimi and T. Pun and A. Nijholt and I. Patras},
+   doi = {10.1109/T-AFFC.2011.15},
+   issn = {1949-3045},
+   issue = {1},
+   journal = {IEEE Transactions on Affective Computing},
+   month = {1},
+   pages = {18-31},
+   title = {DEAP: A Database for Emotion Analysis ;Using Physiological Signals},
+   volume = {3},
+   year = {2012},
+}
+@article{Dasari2021,
+   abstract = {<p>This work investigates the estimation biases of remote photoplethysmography (rPPG) methods for pulse rate measurement across diverse demographics. Advances in photoplethysmography (PPG) and rPPG methods have enabled the development of contact and noncontact approaches for continuous monitoring and collection of patient health data. The contagious nature of viruses such as COVID-19 warrants noncontact methods for physiological signal estimation. However, these approaches are subject to estimation biases due to variations in environmental conditions and subject demographics. The performance of contact-based wearable sensors has been evaluated, using off-the-shelf devices across demographics. However, the measurement uncertainty of rPPG methods that estimate pulse rate has not been sufficiently tested across diverse demographic populations or environments. Quantifying the efficacy of rPPG methods in real-world conditions is critical in determining their potential viability as health monitoring solutions. Currently, publicly available face datasets accompanied by physiological measurements are typically captured in controlled laboratory settings, lacking diversity in subject skin tones, age, and cultural artifacts (e.g, bindi worn by Indian women). In this study, we collect pulse rate and facial video data from human subjects in India and Sierra Leone, in order to quantify the uncertainty in noncontact pulse rate estimation methods. The video data are used to estimate pulse rate using state-of-the-art rPPG camera-based methods, and compared against ground truth measurements captured using an FDA-approved contact-based pulse rate measurement device. Our study reveals that rPPG methods exhibit similar biases when compared with a contact-based device across demographic groups and environmental conditions. The mean difference between pulse rates measured by rPPG methods and the ground truth is found to be ~2% (1 beats per minute (b.p.m.)), signifying agreement of rPPG methods with the ground truth. We also find that rPPG methods show pulse rate variability of ~15% (11 b.p.m.), as compared to the ground truth. We investigate factors impacting rPPG methods and discuss solutions aimed at mitigating variance.</p>},
+   author = {Ananyananda Dasari and Sakthi Kumar Arul Prakash and László A. Jeni and Conrad S. Tucker},
+   doi = {10.1038/s41746-021-00462-z},
+   issn = {2398-6352},
+   issue = {1},
+   journal = {npj Digital Medicine},
+   month = {6},
+   pages = {91},
+   title = {Evaluation of biases in remote photoplethysmography methods},
+   volume = {4},
+   year = {2021},
+}
+@article{McDuff2019,
+   abstract = {Imaging-based, non-contact measurement of physiology (including imaging photoplethysmography and imaging ballistocardiography) is a growing field of research. There are several strengths of imaging methods that make them attractive. They remove the need for uncomfortable contact sensors and can enable spatial and concomitant measurement from a single sensor. Furthermore, cameras are ubiquitous and often low-cost solutions for sensing. Open source toolboxes help accelerate the progress of research by providing a means to compare new approaches against standard implementations of the state-of-the-art. We present an open source imaging-based physiological measurement toolbox with implementations of many of the most frequently employed computational methods. We hope that this toolbox will contribute to the advancement of non-contact physiological sensing methods.},
+   author = {Daniel McDuff and Ethan Blackford},
+   month = {1},
+   title = {iPhys: An Open Non-Contact Imaging-Based Physiological Measurement Toolbox},
+   year = {2019},
+}
+@inproceedings{Hsu2017,
+   author = {Gee-Sern Hsu and ArulMurugan Ambikapathi and Ming-Shiang Chen},
+   doi = {10.1109/BTAS.2017.8272721},
+   isbn = {978-1-5386-1124-1},
+   journal = {2017 IEEE International Joint Conference on Biometrics (IJCB)},
+   month = {10},
+   pages = {383-389},
+   publisher = {IEEE},
+   title = {Deep learning with time-frequency representation for pulse estimation from facial videos},
+   year = {2017},
+}
+@article{Liu2022,
+   abstract = {Camera physiological measurement is a fast growing field of computer vision. Remote photoplethysmography (rPPG) uses video cameras (imagers) to measure the peripheral blood volume pulse (BVP). Simply, this enables heart rate measurement via webcams, smartphone cameras and many other imaging devices. The current state-of-the-art methods are supervised deep neural architectures that have large numbers of parameters and a signal number of hyperparameters. Replication of results and benchmarking of new models is critical for scientific progress. However, as with many other applications of deep learning, reliable codebases are not easy to find. We present a comprehensive toolbox, rPPG-Toolbox, containing code for training and evaluating unsupervised and supervised rPPG models: https://github.com/ubicomplab/rPPG-Toolbox},
+   author = {Xin Liu and Xiaoyu Zhang and Girish Narayanswamy and Yuzhe Zhang and Yuntao Wang and Shwetak Patel and Daniel McDuff},
+   month = {10},
+   title = {Deep Physiological Sensing Toolbox},
+   year = {2022},
+}
+@inproceedings{Stricker2014,
+   author = {Ronny Stricker and Steffen Muller and Horst-Michael Gross},
+   doi = {10.1109/ROMAN.2014.6926392},
+   isbn = {978-1-4799-6765-0},
+   journal = {The 23rd IEEE International Symposium on Robot and Human Interactive Communication},
+   month = {8},
+   pages = {1056-1062},
+   publisher = {IEEE},
+   title = {Non-contact video-based pulse rate measurement on a mobile service robot},
+   year = {2014},
+}
+@inproceedings{Zhang2016,
+   author = {Zheng Zhang and Jeffrey M. Girard and Yue Wu and Xing Zhang and Peng Liu and Umur Ciftci and Shaun Canavan and Michael Reale and Andrew Horowitz and Huiyuan Yang and Jeffrey F. Cohn and Qiang Ji and Lijun Yin},
+   doi = {10.1109/CVPR.2016.374},
+   isbn = {978-1-4673-8851-1},
+   journal = {2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+   month = {6},
+   pages = {3438-3446},
+   publisher = {IEEE},
+   title = {Multimodal Spontaneous Emotion Corpus for Human Behavior Analysis},
+   year = {2016},
+}
+@article{Soleymani2012,
+   author = {Mohammad Soleymani and Jeroen Lichtenauer and Thierry Pun and Maja Pantic},
+   doi = {10.1109/T-AFFC.2011.25},
+   issue = {1},
+   journal = {IEEE Transactions on Affective Computing},
+   pages = {42-55},
+   title = {A Multimodal Database for Affect Recognition and Implicit Tagging},
+   volume = {3},
+   year = {2012},
+}
+@article{Li2020,
+   abstract = {Remote measurement of physiological signals from videos is an emerging topic.
+The topic draws great interests, but the lack of publicly available benchmark
+databases and a fair validation platform are hindering its further development.
+For this concern, we organize the first challenge on Remote Physiological
+Signal Sensing (RePSS), in which two databases of VIPL and OBF are provided as
+the benchmark for kin researchers to evaluate their approaches. The 1st
+challenge of RePSS focuses on measuring the average heart rate from facial
+videos, which is the basic problem of remote physiological measurement. This
+paper presents an overview of the challenge, including data, protocol, analysis
+of results and discussion. The top ranked solutions are highlighted to provide
+insights for researchers, and future directions are outlined for this topic and
+this challenge.},
+   author = {Xiaobai Li and Haomiao Sun and Zhaodong Sun and Hu Han and Antitza Dantcheva and Shiguang Shan and Guoying Zhao},
+   doi = {10.48550/arxiv.2003.11756},
+   isbn = {9781665401913},
+   issn = {15505499},
+   journal = {Proceedings of the IEEE International Conference on Computer Vision},
+   month = {3},
+   pages = {2404-2413},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {The 1st Challenge on Remote Physiological Signal Sensing (RePSS)},
+   volume = {2021-October},
+   url = {https://arxiv.org/abs/2003.11756v1},
+   year = {2020},
+}
+@article{Niu2019,
+   abstract = {Heart rate (HR) is an important physiological signal that reflects the physical and emotional status of a person. Traditional HR measurements usually rely on contact monitors, which may cause inconvenience and discomfort. Recently, some methods have been proposed for remote HR estimation from face videos; however, most of them focus on well-controlled scenarios, their generalization ability into less-constrained scenarios (e.g., with head movement, and bad illumination) are not known. At the same time, lacking large-scale HR databases has limited the use of deep models for remote HR estimation. In this paper, we propose an end-to-end RhythmNet for remote HR estimation from the face. In RyhthmNet, we use a spatial-temporal representation encoding the HR signals from multiple ROI volumes as its input. Then the spatial-temporal representations are fed into a convolutional network for HR estimation. We also take into account the relationship of adjacent HR measurements from a video sequence via Gated Recurrent Unit (GRU) and achieves efficient HR measurement. In addition, we build a large-scale multi-modal HR database (named as VIPL-HR, available at 'http://vipl.ict.ac.cn/view_database.php?id=15'), which contains 2,378 visible light videos (VIS) and 752 near-infrared (NIR) videos of 107 subjects. Our VIPL-HR database contains various variations such as head movements, illumination variations, and acquisition device changes, replicating a less-constrained scenario for HR estimation. The proposed approach outperforms the state-of-the-art methods on both the public-domain and our VIPL-HR databases.},
+   author = {Xuesong Niu and Shiguang Shan and Hu Han and Xilin Chen},
+   doi = {10.1109/TIP.2019.2947204},
+   journal = {IEEE Transactions on Image Processing},
+   keywords = {Remote heart rate estimation,end-to-end learning,rPPG,spatial-temporal representation},
+   month = {10},
+   pages = {2409-2423},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {RhythmNet: End-to-end Heart Rate Estimation from Face via Spatial-temporal Representation},
+   volume = {29},
+   url = {http://arxiv.org/abs/1910.11515 http://dx.doi.org/10.1109/TIP.2019.2947204},
+   year = {2019},
+}
+@article{Wang2015,
+   abstract = {Subject detection is a crucial task for camera-based remote healthcare monitoring. Most existing methods in subject detection rely on supervised learning of physical appearance features. However, their performances are highly restricted to the pretrained appearance model, while still suffering from the false detection of human-similar objects. In this paper, we propose a novel unsupervised method to detect alive subject in a video using physiological features. Our basic idea originates from the observation that only living skin tissue of a human presents pulse signals, which can be exploited as the feature to distinguish human skin from nonhuman surfaces in videos. The proposed VPS method, named voxel-pulse-spectral, consists of three steps: it 1) creates hierarchical voxels across the video for temporally parallel pulse extraction; 2) builds a similarity matrix for hierarchical pulse signals based on their intrinsic properties; and 3) utilizes incremental sparse matrix decomposition with hierarchical fusion to robustly identify and combine the voxels that correspond to single/multiple subjects. Numerous experiments demonstrate the superior performance of VPS over a state-of-the-art method. On average, VPS improves 82.2% on the precision of skin-region detection; 595.5% on the Pearson correlation, and 542.2% on Bland-Altman agreement of instant pulse rate. ANOVA shows that in all-round evaluations, the improvements of VPS are significant. The proposed method is the first method that uses pulse to robustly detect alive subjects in realistic scenarios, which can be favorably applied for healthcare monitoring.},
+   author = {Wenjin Wang and Sander Stuijk and Gerard De Haan},
+   doi = {10.1109/TBME.2015.2438321},
+   issn = {15582531},
+   issue = {11},
+   journal = {IEEE Transactions on Biomedical Engineering},
+   keywords = {Biomedical monitoring,face detection,object segmentation,photo plethysmography,remote sensing},
+   month = {11},
+   pages = {2629-2637},
+   pmid = {26186760},
+   publisher = {IEEE Computer Society},
+   title = {Unsupervised subject detection via remote PPG},
+   volume = {62},
+   year = {2015},
+}
+@article{Lu2021,
+   abstract = {Remote photoplethysmography (rPPG) based physiological measurement has great application values in health monitoring, emotion analysis, etc. Existing methods mainly focus on how to enhance or extract the very weak blood volume pulse (BVP) signals from face videos, but seldom explicitly model the noises that dominate face video content. Thus, they may suffer from poor generalization ability in unseen scenarios. This paper proposes a novel adversarial learning approach for rPPG based physiological measurement by using Dual Generative Adversarial Networks (Dual-GAN) to model the BVP predictor and noise distribution jointly. The BVP-GAN aims to learn a noise-resistant mapping from input to ground-truth BVP, and the Noise-GAN aims to learn the noise distribution. The two GANs can promote each other's capability, leading to improved feature disentanglement between BVP and noises. Besides, a plug-and-play block named ROI alignment and fusion (ROI-AF) block is proposed to alleviate the inconsistencies between different ROIs and exploit informative features from a wider receptive field in terms of ROIs. In comparison to state-of-the-art methods, our approach achieves better performance in heart rate, heart rate variability, and respiration frequency estimation from face videos.},
+   author = {Hao Lu and Hu Han and S. Kevin Zhou},
+   doi = {10.1109/CVPR46437.2021.01222},
+   isbn = {9781665445092},
+   issn = {10636919},
+   journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+   pages = {12399-12408},
+   publisher = {IEEE Computer Society},
+   title = {DuAl-GaN: Joint BVP and noise modeling for remote physiological measurement},
+   year = {2021},
+}
+@article{Li2018,
+   abstract = {Physiological signals, including heart rate (HR), heart rate variability (HRV), and respiratory frequency (RF) are important indicators of our health, which are usually measured in clinical examinations. Traditional physiological signal measurement often involves contact sensors, which may be inconvenient or cause discomfort in long-term monitoring sessions. Recently, there were studies exploring remote HR measurement from facial videos, and several methods have been proposed. However, previous methods cannot be fairly compared, since they mostly used private, self-collected small datasets as there has been no public benchmark database for the evaluation. Besides, we haven't found any study that validates such methods for clinical applications yet, e.g., diagnosing cardiac arrhythmias/disease, which could be one major goal of this technology. In this paper, we introduce the Oulu Bio-Face (OBF) database as a benchmark set to fill in the blank. The OBF database includes large number of facial videos with simultaneously recorded reference physiological signals. The data were recorded both from healthy subjects and from patients with atrial fibrillation (AF), which is the most common sustained and widespread cardiac arrhythmia encountered in clinical practice. Accuracy of HR, HRV and RF measured from OBF videos are provided as the baseline results for future evaluation. We also demonstrated that the video-extracted HRV features can achieve promising performance for AF detection, which has never been studied before. From a wider outlook, the remote technology may lead to convenient self-examination in mobile condition for earlier diagnosis of the arrhythmia.},
+   author = {Xiaobai Li and Iman Alikhani and Jingang Shi and Tapio Seppanen and Juhani Junttila and Kirsi Majamaa-Voltti and Mikko Tulppo and Guoying Zhao},
+   doi = {10.1109/FG.2018.00043},
+   isbn = {9781538623350},
+   journal = {Proceedings - 13th IEEE International Conference on Automatic Face and Gesture Recognition, FG 2018},
+   keywords = {Atrial fibrillation,Database,Facial video,Heart rate,Heart rate variability},
+   month = {6},
+   pages = {242-249},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {The OBF Database: A large face video database for remote physiological signal measurement and atrial fibrillation detection},
+   year = {2018},
+}
+@article{Niu2018,
+   abstract = {Heart rate (HR) is an important physiological signal that reflects the
+physical and emotional activities of humans. Traditional HR measurements are
+mainly based on contact monitors, which are inconvenient and may cause
+discomfort for the subjects. Recently, methods have been proposed for remote HR
+estimation from face videos. However, most of the existing methods focus on
+well-controlled scenarios, their generalization ability into less-constrained
+scenarios are not known. At the same time, lacking large-scale databases has
+limited the use of deep representation learning methods in remote HR
+estimation. In this paper, we introduce a large-scale multi-modal HR database
+(named as VIPL-HR), which contains 2,378 visible light videos (VIS) and 752
+near-infrared (NIR) videos of 107 subjects. Our VIPL-HR database also contains
+various variations such as head movements, illumination variations, and
+acquisition device changes. We also learn a deep HR estimator (named as
+RhythmNet) with the proposed spatial-temporal representation, which achieves
+promising results on both the public-domain and our VIPL-HR HR estimation
+databases. We would like to put the VIPL-HR database into the public domain.},
+   author = {Xuesong Niu and Hu Han and Shiguang Shan and Xilin Chen},
+   doi = {10.48550/arxiv.1810.04927},
+   isbn = {9783030208721},
+   issn = {16113349},
+   journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+   month = {10},
+   pages = {562-576},
+   publisher = {Springer Verlag},
+   title = {VIPL-HR: A Multi-modal Database for Pulse Estimation from Less-constrained Face Video},
+   volume = {11365 LNCS},
+   url = {https://arxiv.org/abs/1810.04927v2},
+   year = {2018},
+}
+@article{Boccignone2020,
+   abstract = {This paper presents a comprehensive framework for studying methods of pulse rate estimation relying on remote photoplethysmography (rPPG). There has been a remarkable development of rPPG techniques in recent years, and the publication of several surveys too, yet a sound assessment of their performance has been overlooked at best, whether not undeveloped. The methodological rationale behind the framework we propose is that in order to study, develop and compare new rPPG methods in a principled and reproducible way, the following conditions should be met: 1) a structured pipeline to monitor rPPG algorithms' input, output, and main control parameters; 2) the availability and the use of multiple datasets; and 3) a sound statistical assessment of methods' performance. The proposed framework is instantiated in the form of a Python package named pyVHR (short for Python tool for Virtual Heart Rate), which is made freely available on GitHub (github.com/phuselab/pyVHR). Here, to substantiate our approach, we evaluate eight well-known rPPG methods, through extensive experiments across five public video datasets, and subsequent nonparametric statistical analysis. Surprisingly, performances achieved by the four best methods, namely POS, CHROM, PCA and SSR, are not significantly different from a statistical standpoint higighting the importance of evaluate the different approaches with a statistical assessment.},
+   author = {Giuseppe Boccignone and Donatello Conte and Vittorio Cuculo and Alessandro D'Amelio and Giuliano Grossi and Raffaella Lanzarotti},
+   doi = {10.1109/ACCESS.2020.3040936},
+   issn = {21693536},
+   journal = {IEEE Access},
+   keywords = {Python package,Remote photoplethysmography (rPPG),non-parametric statistical test,pulse rate estimation,statistical analysis},
+   pages = {216083-216103},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {An Open Framework for Remote-PPG Methods and Their Assessment},
+   volume = {8},
+   year = {2020},
+}
+@article{Boccignone2022,
+   abstract = {Remote photoplethysmography (rPPG) aspires to automatically estimate heart rate (HR) variability from videos in realistic environments. A number of effective methods relying on data-driven, model-based and statistical approaches have emerged in the past two decades. They exhibit increasing ability to estimate the blood volume pulse (BVP) signal upon which BPMs (Beats per Minute) can be estimated. Furthermore, learning-based rPPG methods have been recently proposed. The present pyVHR framework represents a multi-stage pipeline covering the whole process for extracting and analyzing HR fluctuations. It is designed for both theoretical studies and practical applications in contexts where wearable sensors are inconvenient to use. Namely, pyVHR supports either the development, assessment and statistical analysis of novel rPPG methods, either traditional or learning-based, or simply the sound comparison of well-established methods on multiple datasets. It is built up on accelerated Python libraries for video and signal processing as well as equipped with parallel/accelerated ad-hoc procedures paving the way to online processing on a GPU. The whole accelerated process can be safely run in real-time for 30 fps HD videos with an average speedup of around 5. This paper is shaped in the form of a gentle tutorial presentation of the framework.},
+   author = {Giuseppe Boccignone and Donatello Conte and Vittorio Cuculo and Alessandro D'Amelio and Giuliano Grossi and Raffaella Lanzarotti and Edoardo Mortara},
+   doi = {10.7717/PEERJ-CS.929},
+   issn = {2376-5992},
+   journal = {PeerJ Computer Science},
+   keywords = {Contactless monitoring,Deep rPPG,Deepfake Detection,Heart Rate Estimation,Human-Computer Interaction,Remote photoplethysmography},
+   month = {4},
+   pages = {e929},
+   publisher = {PeerJ Inc.},
+   title = {pyVHR: a Python framework for remote photoplethysmography},
+   volume = {8},
+   url = {https://peerj.com/articles/cs-929},
+   year = {2022},
+}
+@article{Liu2022,
+   abstract = {Remote photoplethysmography (rPPG) is a video-based non-contact heart rate measurement technology. It is a fact that most existing rPPG methods fail to deal with the spatiotemporal features of the video, which is significant for the extraction of the rPPG signal. In this paper, we propose a 3D central difference convolutional network (CDCA-rPPGNet) to measure heart rate, with an attention mechanism to combine spatial and temporal features. First, we crop and stitch the region of interest together through facial landmarks. Next, the high-quality regions of interest are fed to CDCA-rPPGNet based on a central difference convolution, which can enhance the spatiotemporal representation and capture rich relevant time contexts by collecting time difference information. In addition, we integrate the attention module into the neural network, aiming to strengthen the ability of the neural network to extract video channels and spatial features, so as to obtain more accurate rPPG signals. In summary, the three main contributions of this paper are as follows: (1) the proposed network base on central difference convolution could better capture the subtle color changes to recover the rPPG signals; (2) the proposed ROI extraction method provides high-quality input to the network; (3) the attention module is used to strengthen the ability of the network to extract features. Extensive experiments are conducted on two public datasets&mdash;the PURE dataset and the UBFC-rPPG dataset. In terms of the experiment results, our proposed method achieves 0.46 MAE (bpm), 0.90 RMSE (bpm) and 0.99 R value of Pearson&rsquo;s correlation coefficient on the PURE dataset, and 0.60 MAE (bpm), 1.38 RMSE (bpm) and 0.99 R value of Pearson&rsquo;s correlation coefficient on the UBFC dataset, which proves the effectiveness of our proposed approach.},
+   author = {Xinhua Liu and Wenqian Wei and Hailan Kuang and Xiaolin Ma},
+   doi = {10.3390/S22020688},
+   issn = {1424-8220},
+   issue = {2},
+   journal = {Sensors 2022, Vol. 22, Page 688},
+   keywords = {attention mechanism,central difference convolution,heart rate measurement,interest,of,region},
+   month = {1},
+   pages = {688},
+   pmid = {35062649},
+   publisher = {Multidisciplinary Digital Publishing Institute},
+   title = {Heart Rate Measurement Based on 3D Central Difference Convolution with Attention Mechanism},
+   volume = {22},
+   url = {https://www.mdpi.com/1424-8220/22/2/688/htm https://www.mdpi.com/1424-8220/22/2/688},
+   year = {2022},
+}
+@article{Kang2022,
+   abstract = {Non-contact facial video-based heart rate estimation using remote
+photoplethysmography (rPPG) has shown great potential in many applications
+(e.g., remote health care) and achieved creditable results in constrained
+scenarios. However, practical applications require results to be accurate even
+under complex environment with head movement and unstable illumination.
+Therefore, improving the performance of rPPG in complex environment has become
+a key challenge. In this paper, we propose a novel video embedding method that
+embeds each facial video sequence into a feature map referred to as Multi-scale
+Adaptive Spatial and Temporal Map with Overlap (MAST_Mop), which contains not
+only vital information but also surrounding information as reference, which
+acts as the mirror to figure out the homogeneous perturbations imposed on
+foreground and background simultaneously, such as illumination instability.
+Correspondingly, we propose a two-stream Transformer model to map the MAST_Mop
+into heart rate (HR), where one stream follows the pulse signal in the facial
+area while the other figures out the perturbation signal from the surrounding
+region such that the difference of the two channels leads to adaptive noise
+cancellation. Our approach significantly outperforms all current
+state-of-the-art methods on two public datasets MAHNOB-HCI and VIPL-HR. As far
+as we know, it is the first work with Transformer as backbone to capture the
+temporal dependencies in rPPGs and apply the two stream scheme to figure out
+the interference from backgrounds as mirror of the corresponding perturbation
+on foreground signals for noise tolerating.},
+   author = {Jiaqi Kang and Su Yang and Weishan Zhang},
+   doi = {10.48550/arxiv.2201.10873},
+   month = {1},
+   title = {TransPPG: Two-stream Transformer for Remote Heart Rate Estimate},
+   url = {https://arxiv.org/abs/2201.10873v1},
+   year = {2022},
+}
+@article{Yu2021,
+   abstract = {Remote photoplethysmography (rPPG), which aims at measuring heart activities
+and physiological signals from facial video without any contact, has great
+potential in many applications (e.g., remote healthcare and affective
+computing). Recent deep learning approaches focus on mining subtle rPPG clues
+using convolutional neural networks with limited spatio-temporal receptive
+fields, which neglect the long-range spatio-temporal perception and interaction
+for rPPG modeling. In this paper, we propose the PhysFormer, an end-to-end
+video transformer based architecture, to adaptively aggregate both local and
+global spatio-temporal features for rPPG representation enhancement. As key
+modules in PhysFormer, the temporal difference transformers first enhance the
+quasi-periodic rPPG features with temporal difference guided global attention,
+and then refine the local spatio-temporal representation against interference.
+Furthermore, we also propose the label distribution learning and a curriculum
+learning inspired dynamic constraint in frequency domain, which provide
+elaborate supervisions for PhysFormer and alleviate overfitting. Comprehensive
+experiments are performed on four benchmark datasets to show our superior
+performance on both intra- and cross-dataset testings. One highlight is that,
+unlike most transformer networks needed pretraining from large-scale datasets,
+the proposed PhysFormer can be easily trained from scratch on rPPG datasets,
+which makes it promising as a novel transformer baseline for the rPPG
+community. The codes will be released at
+https://github.com/ZitongYu/PhysFormer.},
+   author = {Zitong Yu and Yuming Shen and Jingang Shi and Hengshuang Zhao and Philip Torr and Guoying Zhao},
+   doi = {10.48550/arxiv.2111.12082},
+   month = {11},
+   title = {PhysFormer: Facial Video-based Physiological Measurement with Temporal Difference Transformer},
+   url = {https://arxiv.org/abs/2111.12082v2},
+   year = {2021},
+}
+@article{,
+   abstract = {The acquisition of remote photoplethysmography (rPPG) signals is important in multiple applications. Recently, deep-learning-based approaches such as 3D convolutional networks (3DCNNs) have outperformed traditional hand-crafted methods. However, despite their robust modeling ability, it is well known that large 3DCNN models have high computational costs and may be unsuitable for real-time applications. In this paper, we propose a study of the 3DCNN architecture, finding the best compromise between heart rate measurement precision and inference time. The fast inference is obtained decreasing the input size while the precision performance is obtained introducing a new time and frequency-based loss function by adding the signal-to-noise-ratio component to the regular Pearson’s correlation loss function. In addition, changing the input color space from RGB to YUV also improved heart rate measurement precision. Using the VIPL-HR database, we retained the HR mean absolute error at 3.99 bpm which is comparable to 3.87 bpm of the state-of-the-art, while the GPU and CPU inference process improved around 88% from 51.77 ms to 2.32 ms in GPU and from 241.57 ms to 28.65 ms in CPU. The resulting network is called Real-Time rPPG (RTrPPG). We release the RTrPPG source code to encourage reproducibility 1.},
+   author = {D. Botina-Monsalve and Y. Benezeth and J. Miteran},
+   doi = {10.1109/CVPRW56347.2022.00233},
+   isbn = {9781665487399},
+   issn = {21607516},
+   month = {8},
+   pages = {2145-2153},
+   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+   title = {RTrPPG: An Ultra Light 3DCNN for Real-Time Remote Photoplethysmography},
+   year = {2022},
+}
+@article{Gideon2021,
+   abstract = {The ability to reliably estimate physiological signals from video is a
+powerful tool in low-cost, pre-clinical health monitoring. In this work we
+propose a new approach to remote photoplethysmography (rPPG) - the measurement
+of blood volume changes from observations of a person's face or skin. Similar
+to current state-of-the-art methods for rPPG, we apply neural networks to learn
+deep representations with invariance to nuisance image variation. In contrast
+to such methods, we employ a fully self-supervised training approach, which has
+no reliance on expensive ground truth physiological training data. Our proposed
+method uses contrastive learning with a weak prior over the frequency and
+temporal smoothness of the target signal of interest. We evaluate our approach
+on four rPPG datasets, showing that comparable or better results can be
+achieved compared to recent supervised deep learning methods but without using
+any annotation. In addition, we incorporate a learned saliency resampling
+module into both our unsupervised approach and supervised baseline. We show
+that by allowing the model to learn where to sample the input image, we can
+reduce the need for hand-engineered features while providing some
+interpretability into the model's behavior and possible failure modes. We
+release code for our complete training and evaluation pipeline to encourage
+reproducible progress in this exciting new direction.},
+   author = {John Gideon and Simon Stent},
+   doi = {10.48550/arxiv.2111.09748},
+   month = {11},
+   title = {The Way to my Heart is through Contrastive Learning: Remote Photoplethysmography from Unlabelled Video},
+   url = {https://arxiv.org/abs/2111.09748v1},
+   year = {2021},
+}
+@article{Gideon2021,
+   abstract = {We describe our entry for the ICCV 2021 Vision4Vitals Workshop [6] heart rate challenge, in which the goal is to estimate the heart rate of human subjects from facial video. While the challenge dataset contains extensive training data with ground truth blood pressure and heart rate signals, and therefore affords supervised learning, we pursue a different approach. We disregard the available ground truth blood pressure data entirely and instead seek to learn the photoplethysomgraphy (PPG) signal visible in subjects' faces via a self-supervised contrastive learning technique. Since this approach does not require ground truth data, and since the challenge competition rules allow it, we therefore can train directly on test set videos. To boost performance further, we learn a supervised heart rate estimator on top of our "dis-covered"PPG signal, which more explicitly tries to match the ground truth heart rate. Our final approach ranked first on the competition test set, achieving a mean absolute error of 9.22 beats per minute.},
+   author = {John Gideon and Simon Stent},
+   doi = {10.1109/ICCVW54120.2021.00307},
+   isbn = {9781665401913},
+   issn = {15505499},
+   journal = {Proceedings of the IEEE International Conference on Computer Vision},
+   pages = {2743-2749},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {Estimating Heart Rate from Unlabelled Video},
+   volume = {2021-October},
+   year = {2021},
+}
+@article{Balakrishnan2013,
+   abstract = {We extract heart rate and beat lengths from videos by measuring subtle head motion caused by the Newtonian reaction to the influx of blood at each beat. Our method tracks features on the head and performs principal component analysis (PCA) to decompose their trajectories into a set of component motions. It then chooses the component that best corresponds to heartbeats based on its temporal frequency spectrum. Finally, we analyze the motion projected to this component and identify peaks of the trajectories, which correspond to heartbeats. When evaluated on 18 subjects, our approach reported heart rates nearly identical to an electrocardiogram device. Additionally we were able to capture clinically relevant information about heart rate variability. © 2013 IEEE.},
+   author = {Guha Balakrishnan and Fredo Durand and John Guttag},
+   doi = {10.1109/CVPR.2013.440},
+   issn = {10636919},
+   journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+   keywords = {humans,medical imaging,motion estimation,optical flow,principal component analysis,pulse measurement},
+   pages = {3430-3437},
+   title = {Detecting pulse from head motions in video},
+   year = {2013},
+}
+@article{Cheng2021,
+   abstract = {Noncontact and low-cost heart rate (HR) measurement based on imaging photoplethysmography (iPPG) technology is commonly desired for health care monitoring. However, the usually employed red-green-blue (RGB) cameras are sensitive to illumination variations and cannot work under dark situations. In this study, we propose a novel framework of applying joint blind source separation with delay-coordinate transformation (DCT-JBSS) to evaluate HR from a single-channel near-infrared (NIR) camera in dark situation. First, three facial regions of interest (ROIs) are determined by face detection technique and a single-channel signal is constructed through a frame-by-frame pixel averaging within each ROI. Second, each single-channel signal is transformed into time-delayed multichannel signal through DCT and then treated as a separate ROI signal set. Third, the three ROI signal sets are simultaneously processed by JBSS to derive the underlying shared HR source component vector (SCV), which is usually ordered the first and has the highest correlation across each signal set. Finally, the fast Fourier transform (FFT) is applied to the HR SCV and the corresponding dominant frequency (within the range from 0.7 to 2.5 Hz) with the highest signal-to-noise ratio (SNR) is determined as the target HR frequency. The proposed framework, as well as several other typical iPPG methods, is validated on public DROZY and MR-NIRP databases. The proposed method achieves the best performance, providing a probable way to widen the application of remote and continuous HR measurement during night conditions.},
+   author = {Juan Cheng and Ping Wang and Rencheng Song and Yu Liu and Chang Li and Yong Liu and Xun Chen},
+   doi = {10.1109/TIM.2020.3041083},
+   issn = {15579662},
+   journal = {undefined},
+   keywords = {Delay-coordinate transformation (DCT),independent vector analysis (IVA),joint blind source separation (JBSS),near-infrared (NIR) video,noncontact heart rate (HR)},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {Remote Heart Rate Measurement From Near-Infrared Videos Based on Joint Blind Source Separation With Delay-Coordinate Transformation},
+   volume = {70},
+   url = {https://www.doc88.com/p-77847182181869.html},
+   year = {2021},
+}
+@web_page{,
+   title = {[PDF] Remote Heart Rate Measurement From Near-Infrared Videos Based on Joint Blind Source Separation With Delay-Coordinate Transformation | Semantic Scholar},
+   url = {https://www.semanticscholar.org/paper/Remote-Heart-Rate-Measurement-From-Near-Infrared-on-Cheng-Wang/9504a9741890d7fe5ead97658ae11319973d2f93},
+}
+@article{Bobbia2019,
+   abstract = {Segmentation is a critical step for many algorithms, especially for remote photoplethysmography (rPPG)applications as only the skin surface provides information. Moreover, it has been shown that the rPPG signal is not distributed homogeneously across the skin. Most of the time, algorithms get input information from face detection provided by a supervised learning of physical appearance and skin pixel selection. However, both methods show several limitations. In this paper, we propose a simple approach to implicitly select skin tissues based on their distinct pulsatility feature. The input video frames are decomposed into several temporal superpixels from which the pulse signals are extracted. A pulsatility measure from each temporal superpixel is then used to merge the pulse traces and estimate the photoplethysmogram signal. Since the most pulsatile signals provide high quality information, areas where the information is predominant are favored. We evaluated our contribution using a new publicly available dataset dedicated to rPPG algorithms comparison. The results of our experiments show that our method outperforms state of the art algorithms, without any critical face or skin detection.},
+   author = {Serge Bobbia and Richard Macwan and Yannick Benezeth and Alamin Mansouri and Julien Dubois},
+   doi = {10.1016/J.PATREC.2017.10.017},
+   issn = {0167-8655},
+   journal = {Pattern Recognition Letters},
+   keywords = {Image processing,Living skin tissue segmentation,Remote photoplethysmography,Unsupervised},
+   month = {6},
+   pages = {82-90},
+   publisher = {North-Holland},
+   title = {Unsupervised skin tissue segmentation for remote photoplethysmography},
+   volume = {124},
+   url = {https://sites.google.com/view/ybenezeth/ubfcrppg},
+   year = {2019},
+}
+@article{Meziatisabour2021,
+   abstract = {As humans, we experience social stress in countless everyday-life situations. Giving a speech in front of an audience, passing a job interview, and similar experiences all lead us to go through stress states that impact both our psychological and physiological states. Therefore, studying the link between stress and physiological responses had become a critical societal issue, and recently, research in this field has grown in popularity. However, publicly available datasets have limitations. In this article, we propose a new dataset, UBFC-Phys, collected with and without contact from participants living social stress situations. A wristband was used to measure contact blood volume pulse (BVP) and electrodermal activity (EDA) signals. Video recordings allowed to compute remote pulse signals, using remote photoplethysmography (RPPG), and facial expression features. Pulse rate variability (PRV) was extracted from BVP and RPPG signals. Our dataset permits to evaluate the possibility of using video-based physiological measures compared to more conventional contact-based modalities. The goal of this article is to present both the dataset, which we make publicly available, and experimental results of contact and non-contact data comparison, as well as stress recognition. We obtained a stress state recognition accuracy of 85.48%, achieved by remote PRV features.},
+   author = {Rita Meziatisabour and Yannick Benezeth and Pierre De Oliveira and Julien Chappe and Fan Yang},
+   doi = {10.1109/TAFFC.2021.3056960},
+   issn = {19493045},
+   journal = {IEEE Transactions on Affective Computing},
+   keywords = {electrodermal activity,psychophysiology,pulse rate variability,remote photoplethysmography,stress recognition},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {UBFC-Phys: A Multimodal Database For Psychophysiological Studies Of Social Stress},
+   url = {https://sites.google.com/view/ybenezeth/ubfc-phys},
+   year = {2021},
+}
+@article{Liu2021,
+   abstract = {Camera-based physiological measurement is a growing field with neural models
+providing state-the-art-performance. Prior research have explored various
+"end-to-end" models; however these methods still require several preprocessing
+steps. These additional operations are often non-trivial to implement making
+replication and deployment difficult and can even have a higher computational
+budget than the "core" network itself. In this paper, we propose two novel and
+efficient neural models for camera-based physiological measurement called
+EfficientPhys that remove the need for face detection, segmentation,
+normalization, color space transformation or any other preprocessing steps.
+Using an input of raw video frames, our models achieve strong performance on
+three public datasets. We show that this is the case whether using a
+transformer or convolutional backbone. We further evaluate the latency of the
+proposed networks and show that our most light weight network also achieves a
+33% improvement in efficiency.},
+   author = {Xin Liu and Brian L. Hill and Ziheng Jiang and Shwetak Patel and Daniel McDuff},
+   doi = {10.48550/arxiv.2110.04447},
+   month = {10},
+   title = {EfficientPhys: Enabling Simple, Fast and Accurate Camera-Based Vitals Measurement},
+   url = {https://arxiv.org/abs/2110.04447v2},
+   year = {2021},
+}
+@article{Zhan2019,
+   abstract = {Deep learning based on Convolutional Neural Network (CNN) has shown promising
+results in various vision-based applications, recently also in camera-based
+vital signs monitoring. The CNN-based Photoplethysmography (PPG) extraction
+has, so far, been focused on performance rather than understanding. In this
+paper, we try to answer four questions with experiments aiming at improving our
+understanding of this methodology as it gains popularity. We conclude that the
+network exploits the blood absorption variation to extract the physiological
+signals, and that the choice and parameters (phase, spectral content, etc.) of
+the reference-signal may be more critical than anticipated. The availability of
+multiple convolutional kernels is necessary for CNN to arrive at a flexible
+channel combination through the spatial operation, but may not provide the same
+motion-robustness as a multi-site measurement using knowledge-based PPG
+extraction. Finally, we conclude that the PPG-related prior knowledge is still
+helpful for the CNN-based PPG extraction. Consequently, we recommend further
+investigation of hybrid CNN-based methods to include prior knowledge in their
+design.},
+   author = {Qi Zhan and Wenjin Wang and Gerard de Haan},
+   doi = {10.48550/arxiv.1911.02736},
+   issn = {2156-7085},
+   issue = {3},
+   journal = {Biomedical Optics Express},
+   month = {11},
+   pages = {1268},
+   publisher = {The Optical Society},
+   title = {Analysis of CNN-based remote-PPG to understand limitations and sensitivities},
+   volume = {11},
+   url = {https://arxiv.org/abs/1911.02736v2},
+   year = {2019},
+}
+@article{Comas2022,
+   abstract = {We present a lightweight neural model for remote heart rate estimation
+focused on the efficient spatio-temporal learning of facial
+photoplethysmography (PPG) based on i) modelling of PPG dynamics by
+combinations of multiple convolutional derivatives, and ii) increased
+flexibility of the model to learn possible offsets between the facial video PPG
+and the ground truth. PPG dynamics are modelled by a Temporal Derivative Module
+(TDM) constructed by the incremental aggregation of multiple convolutional
+derivatives, emulating a Taylor series expansion up to the desired order.
+Robustness to ground truth offsets is handled by the introduction of TALOS
+(Temporal Adaptive LOcation Shift), a new temporal loss to train learning-based
+models. We verify the effectiveness of our model by reporting accuracy and
+efficiency metrics on the public PURE and UBFC-rPPG datasets. Compared to
+existing models, our approach shows competitive heart rate estimation accuracy
+with a much lower number of parameters and lower computational cost.},
+   author = {Joaquim Comas and Adria Ruiz and Federico Sukno},
+   doi = {10.48550/arxiv.2203.10882},
+   month = {3},
+   title = {Efficient Remote Photoplethysmography with Temporal Derivative Modules and Time-Shift Invariant Loss},
+   url = {https://arxiv.org/abs/2203.10882v2},
+   year = {2022},
+}
+@article{Gideon2021,
+   abstract = {The ability to reliably estimate physiological signals from video is a
+powerful tool in low-cost, pre-clinical health monitoring. In this work we
+propose a new approach to remote photoplethysmography (rPPG) - the measurement
+of blood volume changes from observations of a person's face or skin. Similar
+to current state-of-the-art methods for rPPG, we apply neural networks to learn
+deep representations with invariance to nuisance image variation. In contrast
+to such methods, we employ a fully self-supervised training approach, which has
+no reliance on expensive ground truth physiological training data. Our proposed
+method uses contrastive learning with a weak prior over the frequency and
+temporal smoothness of the target signal of interest. We evaluate our approach
+on four rPPG datasets, showing that comparable or better results can be
+achieved compared to recent supervised deep learning methods but without using
+any annotation. In addition, we incorporate a learned saliency resampling
+module into both our unsupervised approach and supervised baseline. We show
+that by allowing the model to learn where to sample the input image, we can
+reduce the need for hand-engineered features while providing some
+interpretability into the model's behavior and possible failure modes. We
+release code for our complete training and evaluation pipeline to encourage
+reproducible progress in this exciting new direction.},
+   author = {John Gideon and Simon Stent},
+   doi = {10.48550/arxiv.2111.09748},
+   month = {11},
+   title = {The Way to my Heart is through Contrastive Learning: Remote Photoplethysmography from Unlabelled Video},
+   url = {https://arxiv.org/abs/2111.09748v1},
+   year = {2021},
+}
+@article{Bobbia2019,
+   abstract = {Segmentation is a critical step for many algorithms, especially for remote photoplethysmography (rPPG)applications as only the skin surface provides information. Moreover, it has been shown that the rPPG signal is not distributed homogeneously across the skin. Most of the time, algorithms get input information from face detection provided by a supervised learning of physical appearance and skin pixel selection. However, both methods show several limitations. In this paper, we propose a simple approach to implicitly select skin tissues based on their distinct pulsatility feature. The input video frames are decomposed into several temporal superpixels from which the pulse signals are extracted. A pulsatility measure from each temporal superpixel is then used to merge the pulse traces and estimate the photoplethysmogram signal. Since the most pulsatile signals provide high quality information, areas where the information is predominant are favored. We evaluated our contribution using a new publicly available dataset dedicated to rPPG algorithms comparison. The results of our experiments show that our method outperforms state of the art algorithms, without any critical face or skin detection.},
+   author = {Serge Bobbia and Richard Macwan and Yannick Benezeth and Alamin Mansouri and Julien Dubois},
+   doi = {10.1016/J.PATREC.2017.10.017},
+   issn = {0167-8655},
+   journal = {Pattern Recognition Letters},
+   keywords = {Image processing,Living skin tissue segmentation,Remote photoplethysmography,Unsupervised},
+   month = {6},
+   pages = {82-90},
+   publisher = {North-Holland},
+   title = {Unsupervised skin tissue segmentation for remote photoplethysmography},
+   volume = {124},
+   year = {2019},
+}
+@article{Wu2022,
+   abstract = {Remote photoplethysmography (rPPG) measurement has received much attention due to its attractive applications in contactless physiological monitoring. It calculates the blood volume pulse from color signals with a normal camera. Artifacts caused by motion and illumination changes must be accounted for, especially in real-world usage. In this article, we propose a novel framework that includes an error compensation neural network after conventional signal-based rPPG extraction to improve the measuring results. Our main idea is to leverage facial image factors and frequency spectrum features to characterize the relevance between the current measurement conditions and measurement error; given inaccurate measurements, the compensation network computes the corresponding correction term to improve performance. The implementation of this compensation network includes a feature extractor based mainly on 1-D convolution kernels and a recurrent structure to account for temporal interference. Results of experiments conducted on two open datasets and two self-constructed datasets recorded for compact car drivers and passengers with driving disturbance demonstrate significant improvements over state-of-the-art methods, especially in challenging cases. The percentage of the mean absolute error with respect to that based on conventional signal-based methods improves by up to 72.3% for drivers and 66.7% for passengers.},
+   author = {Bing Fei Wu and Yi Chiao Wu and Yi Wei Chou},
+   doi = {10.1109/TIM.2022.3141149},
+   issn = {15579662},
+   journal = {IEEE Transactions on Instrumentation and Measurement},
+   keywords = {Convolutional neural network (CNN),error analysis,error compensation,motion invariant,recurrent neural network (RNN),remote photoplethysmography (rPPG),robustness},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {A Compensation Network with Error Mapping for Robust Remote Photoplethysmography in Noise-Heavy Conditions},
+   volume = {71},
+   year = {2022},
+}
+@article{Wu2019,
+   abstract = {Remote-photoplethysmography (rPPG) is a contactless method which can measure Blood Volume Pulse (BVP) and several vital signals from human faces. Until now, most existing techniques depend on frequency analysis and regard the signal component with largest energy as Heart Rate (HR). Nonetheless, the property, that frequency analysis could not identify the instantaneous HR changes restricts the applications on Heart Rate Variability (HRV) analysis and Cardiac Arrhythmia Detection. Consequently, this paper proposes a time domain systolic peak selection algorithm. It reaches 89% Suc5 in stationary case and 90% Suc10 in indoor scenario which are neck and neck with frequency domain analysis. At the same time, the comparison method, Rei-En, gets Suc10 lower than 80% in both situations. We investigate the influence of dicrotic notch and utilize a concise method to prevent wrong Inter-beat interval (IBI) detection for HR and HRV estimation. Benefiting from the characteristic of time domain analysis, the first HR output could be estimated within five seconds, which is much shorter than seventeen seconds in frequency domain analysis. The results suggest that the proposed algorithm improves instantaneity and provides faster first output of rPPG in HR, HRV estimation.},
+   author = {Bing Fei Wu and Yin Yin Yang and Bing Ruei Tsai and Po Wei Huang and Yin Cheng Tsai and Kuan Hung Chen},
+   doi = {10.1109/ICSSE.2019.8823111},
+   isbn = {9781728105253},
+   journal = {Proceedings of 2019 International Conference on System Science and Engineering, ICSSE 2019},
+   keywords = {biomedical monitoring,blood volume pulse (BVP),heart rate variability (HRV),remote-photoplethysmography (rPPG)},
+   month = {7},
+   pages = {88-93},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {Remote HeartRate Measurement based on Signal Feature Detection in Time Domain},
+   year = {2019},
+}
+@article{Wu2019,
+   abstract = {Driver's physiological state is highly correlated to the traffic safety. An affordable and convenient way to monitor driver's physiological state is remote Photoplethysmography (rPPG). Earlier algorithms achieved high accuracy on measuring rPPG signals in stationary case. But in real cases, such as driving, rPPG signals might be corrupted with interference. To obtain higher Signal-to-Noise-Ratio (SNR) rPPG signals, three algorithms are proposed. The PCA spectral subtraction (PCA-SS) considers the spectrum of the environmental noise and utilizes the energy subtraction to reduce the noise. The machine learning methods, convolution autoencoder (CAE) and multi-channel convolution autoencoder (Multi-CAE), are adopted in order to enhance the rPPG signal. The test data we used are 187 videos recorded in stationary case, passenger case, and real driving situation. In driving situation, the Multi-CAE method, in comparison with the original method provided by W. Wang et al. [1] and G. De Haan et al. [2], achieves 33% & 35% reduction in MAE, RMSE respectively, and 11% improvement in success rate [3].},
+   author = {Bing Fei Wu and Po Wei Huang and Da Hong He and Chung Han Lin and Kuan Hung Chen},
+   doi = {10.1109/SMC.2019.8914554},
+   isbn = {9781728145693},
+   issn = {1062922X},
+   journal = {Conference Proceedings - IEEE International Conference on Systems, Man and Cybernetics},
+   month = {10},
+   pages = {2466-2471},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {Remote photoplethysmography enhancement with machine leaning methods},
+   volume = {2019-October},
+   year = {2019},
+}
+@article{,
+   abstract = {Background: Remote physiological measurement might be very useful for biomedical diagnostics and monitoring. This study presents an efficient method for remotely measuring heart rate and respiratory rate from video captured by a hovering unmanned aerial vehicle (UVA). The proposed method estimates heart rate and respiratory rate based on the acquired signals obtained from video-photoplethysmography that are synchronous with cardiorespiratory activity. Methods: Since the PPG signal is highly affected by the noise variations (illumination variations, subject's motions and camera movement), we have used advanced signal processing techniques, including complete ensemble empirical mode decomposition with adaptive noise (CEEMDAN) and canonical correlation analysis (CCA) to remove noise under these assumptions. Results: To evaluate the performance and effectiveness of the proposed method, a set of experiments were performed on 15 healthy volunteers in a front-facing position involving motion resulting from both the subject and the UAV under different scenarios and different lighting conditions. Conclusion: The experimental results demonstrated that the proposed system with and without the magnification process achieves robust and accurate readings and have significant correlations compared to a standard pulse oximeter and Piezo respiratory belt. Also, the squared correlation coefficient, root mean square error, and mean error rate yielded by the proposed method with and without the magnification process were significantly better than the state-of-the-art methodologies, including independent component analysis (ICA) and principal component analysis (PCA).},
+   author = {Ali Al-Naji and Asanka G. Perera and Javaan Chahl},
+   doi = {10.1186/s12938-017-0395-y},
+   issn = {1475925X},
+   issue = {1},
+   journal = {BioMedical Engineering Online},
+   keywords = {Canonical correlation analysis,Imaging photoplethysmography,Unmanned aerial vehicle,Video magnification technique},
+   month = {8},
+   pmid = {28789685},
+   publisher = {BioMed Central Ltd.},
+   title = {Remote monitoring of cardiorespiratory signals from a hovering unmanned aerial vehicle},
+   volume = {16},
+   year = {2017},
+}
+@report{Song2017,
+   abstract = {Remote photoplethysmography (rPPG) is an attractive video-based technique to monitor heart rate (HR) information in telehealth screening. The subjects are required to stay stationary in the remote screening scenario and ambient lights become the main interference source of measuring HR with rPPG. In this paper, we introduce a novel approach robust against spatially uneven illumination interference in rPPG by combining ensemble empirical mode decomposition (EEMD) with multiset canonical correlation analysis (MCCA). We adopt the following procedures to ensure that the pulses dominate the correlations across multiple signal sets while the illumination noises are as diverse as possible. Specifically, a group of optimal regions of interest (ROIs) are selected according to the quality indicators defined from the green channel in each candidate ROI. A multi-channel signal set is then constructed by decomposing the green signal with EEMD. Only those intrinsic mode functions (IMFs) with the dominant frequencies falling into the interested HR range are utilized as the input of MCCA. The canonical variables (CVs) with the highest cross correlations are derived as the underlying candidate pulses. Finally, fast Fourier transform (FFT) is employed to calculate the dominant frequency and the target HR is determined based on both the quasi-periodic property and the continuity of HR. The proposed EEMD-MCCA method is validated on both the in-house BSIPL-RPPG and the public COHFACE databases, which achieves superior performance over several typical rPPG methods. This study will provide a promising tool for realistic rPPG applications in telehealth screening.},
+   author = {Rencheng Song and Jiji Li and Minda Wang and Juan Cheng and Chang Li and Xun Chen and Senior Member},
+   journal = {IEEE SENSORS JOURNAL},
+   keywords = {Index Terms-Remote photoplethysmography,heart rate estimation,joint blind source separation,uneven illumination},
+   pages = {1},
+   title = {Remote Photoplethysmography with An EEMD-MCCA Method Robust Against Spatially Uneven Illuminations},
+   volume = {XX},
+   year = {2017},
+}
+@report{,
+   abstract = {心率是反应人体生理状态的重要指标。心率 检测是获得人体的健康状况、 分析人的情绪变化和 检测人的压力的重要途径 ［ １-３］ 。传统心率检测的 方法主 要 有 ３ 种： 基 于 生 物 电 势 测 量， 如 心 电 图 （ Ｅｌｅｃｔｒｏｃａｒｄｉｏｇｒａｐｈ， ＥＣＧ） ； 基 于 光 学 体 积 描 记 术 （ Ｐｈｏｔｏｐｌｅｔｈｙｓｍｏｇｒａｐｈｙ， ＰＰＧ） 的检测和基于震动的 检测。ＥＣＧ 是目前心率检测的标准方法， 常见于 医院临床。ＰＰＧ 近几年也被广泛应用， 如手环、 智 能手表等测量原理都是基于 ＰＰＧ。基于震动的检 测常见于血压检测仪。这些检测方法都需要皮肤 接触， 易导致不舒适、 不卫生等问题， 且无法进行远 程测量。 利用人脸视频可以远程检测心率， 解决了不卫 生、 不舒适的问题， 因而受到广泛关注 ［ ４-９］ 。通过 人脸视频检测心率的基本原理有 ２ 种： 一种是心肺 活动引起血液流动造成的皮肤颜色变化； 另一种是 心肺活动引起的头部垂直不自主运动。这种微小 的变化人眼无法观测， 但可以通过成像设备采集。 基于此可以通过视频分析和信号处理来获得心率 信号。 人脸视频心率检测在驾驶状态检测、 远程医 疗、 活体检测等方面有着广泛的应用 ［ １-３， １ ０-１ １ ］ 。如 通过对驾驶员心率的检测判断驾驶员的生理状态， 从而对驾驶员进行相应提醒， 减少事故的发生。视 频心率检测涉及计算机视觉、 机器学习、 信号处理、 生物医学工程等多个领域。目前人脸视频检测心 率仍有许多问题亟待解决， 如心率信号在人脸视频 中极其微弱， 而噪声占主要部分， 导致在大幅度运 动和弱光环境下测量精度低等。 本文从检测原理、 基本流程、 数据集、 评价指标 以及未来研究方向 ４ 个方面综述该领域的研究现 状。 １ 基本原理和处理流程 基于人脸视频检测心率的原理有 ２ 种： 一种是 根据血液循环引起的皮肤颜色变化，这种变化会 导致视频帧中亮度值的相应变化， 通过视频分析提 取这种微弱的颜色变化来检测心率， 可以归纳为以 颜色变化为基础的方法； 另一种则根据血液循环活 动产生的微弱头部不自主运动， 利用垂直方向上的 不自主运动提取心率信号， 可以归纳为以运动为基 础的方法。 首先对人脸光照变化建立如图 １ 所示的皮肤 反射模型。光源照射人脸皮肤表面时会形成镜面 反射和漫反射。镜面反射不包含血液流动信息， 仅 仅是光源照射在皮肤上产生的反射。漫反射是光 经过皮肤组织和血液吸收后形成的， 因而含有血液 流动信息， 即含有心率信息。 图 １ 皮肤反射模型 Ｆｉｇ． １ Ｓｋｉｎ ｒｅｆｌｅｘ ｍｏｄｅｌ 人脸视频心率检测包括人脸识别、 兴趣区域 （ Ｒｅｇｉｏｎ ｏｆ ｉｎｔｅｒｅｓｔ， ＲＯＩ） 选择、 ｒＰＰＧ 信号提取及处 理分析等步骤， 处理流程如图 ２ 所示。首先在人脸 视频中利用人脸检测算法检测人脸； 然后选择由于 血液流动造成颜色变化显著的区域作为感兴趣区 域来提取 ｒＰＰＧ 信号； 接着对 ｒＰＰＧ 信号进行去噪、 分离等处理； 最后进行滤波处理和功率谱分析， 以 最大功率所对应的频率作为心率的频率（ ｆ ＨＲ ） ， 按 照式（ １ ） ［ ７］ 来计算每分钟的平均心率。 ＨＲ ａｖｅｒａｇｅ ＝６０ ×ｆ ＨＲ （ １ ） ２ 研究现状及分析 目前， 该领域还处于研究的初期。已有研究结 果表明 ［ １ ２-１ ４］ ， ＲＯＩ 选取、 光照强度变化、 人体肤色、 头部运动等都是准确提取心率信号面临的难点。 国内外学者对此做了深入探讨与研究。根据心率 信号的来源可以将现有研究方法总结为 ２ 类： 基于 运动变化的方法和基于颜色变化的方法。 １ １ 第 ４ 期 欧卫华， 陈龙保： 基于人脸视频的心率检测研究综述},
+   title = {０ 引言},
+}
+@report{Nowara2018,
+   abstract = {Camera-based measurement of the heartbeat signal from minute changes in the appearance of a person's skin is known as remote photoplethysmography (rPPG). Methods for rPPG have improved considerably in recent years, making possible its integration into applications such as telemedicine. Driver monitoring using in-car cameras is another potential application of this emerging technology. Unfortunately, there are several challenges unique to the driver monitoring context that must be overcome. First, there are drastic illumination changes on the driver's face, both during the day (as sun filters in and out of overhead trees, etc.) and at night (from streetlamps and oncoming headlights), which current rPPG algorithms cannot account for. We argue that these variations are significantly reduced by narrow-bandwidth near-infrared (NIR) active illumination at 940 nm, with matching bandpass filter on the camera. Second, the amount of motion during driving is significant. We perform a preliminary analysis of the motion magnitude and argue that any in-car solution must provide better robustness to motion artifacts. Third, low signal-to-noise ratio (SNR) and false peaks due to motion have the potential to confound the rPPG signal. To address these challenges, we develop a novel rPPG signal tracking and denoising algorithm (sparsePPG) based on Robust Principal Components Analysis and sparse frequency spectrum estimation. We release a new dataset of face videos collected simultaneously in RGB and NIR. We demonstrate that in each of these frequency ranges, our new method performs as well as or better than current state-of-the-art rPPG algorithms. Overall, our preliminary study indicates that while driver vital signs monitoring using cameras is promising, much work needs to be done in terms of improving robust-ness to motion artifacts before it becomes practical.},
+   author = {Ewa Magdalena Nowara and Tim K Marks and Hassan Mansour and Ashok Veeraraghavan},
+   title = {SparsePPG: Towards Driver Monitoring Using Camera-Based Vital Signs Estimation in Near-Infrared},
+   year = {2018},
+}
+@article{Zhang2015,
+   abstract = {Goal: A new method for heart rate monitoring using photoplethysmography (PPG) during physical activities is proposed. Methods: It jointly estimates spectra of PPG signals and simultaneous acceleration signals, utilizing the multiple measurement vector model in sparse signal recovery. Due to a common sparsity constraint on spectral coefficients, the method can easily identify and remove spectral peaks of motion artifact (MA) in PPG spectra. Thus, it does not need any extra signal processing modular to remove MA as in some other algorithms. Furthermore, seeking spectral peaks associated with heart rate is simplified. Results: Experimental results on 12 PPG datasets sampled at 25 Hz and recorded during subjects' fast running showed that it had high performance. The average absolute estimation error was 1.28 beat per minute and the standard deviation was 2.61 beat per minute. Conclusion and Significance: These results show that the method has great potential to be used for PPG-based heart rate monitoring in wearable devices for fitness tracking and health monitoring.},
+   author = {Zhilin Zhang},
+   doi = {10.1109/TBME.2015.2406332},
+   month = {2},
+   title = {Photoplethysmography-Based Heart Rate Monitoring in Physical Activities via Joint Sparse Spectrum Reconstruction},
+   url = {http://arxiv.org/abs/1503.00688 http://dx.doi.org/10.1109/TBME.2015.2406332},
+   year = {2015},
+}
+@article{Huang2021,
+   abstract = {Remote photoplethysmography (rPPG) is an unobtrusive solution to heart rate monitoring in drivers. However, disturbances that occur during driving such as driver behavior, motion artifacts, and illuminance variation complicate the monitoring of heart rate. Faced with disturbance, one commonly used assumption is heart rate periodicity (or spectrum sparsity). Several methods improve stability at the expense of tracking sensitivity for heart rate variation. Based on statistical signal processing (SSP) and Monte Carlo simulations, the outlier probability is derived and ADaptive spectral filter banks (AD) is proposed as a new algorithm which provides an explicable tuning option for spectral filter banks to strike a balance between robustness and sensitivity in remote monitoring for driving scenarios. Moreover, we construct a driving database containing over 23 hours of data to verify the proposed algorithm. The influence on rPPG from driver habits (both amateurs and professionals), vehicle types (compact cars and buses), and routes are also evaluated. In comparison to state-of-the-art rPPG for driving scenarios, the mean absolute error in the Passengers, Compact Cars, and Buses scenarios is 3.43, 7.85, and 5.02 beats per minute, respectively. Moreover, AD also won the top third place in the first challenge on remote physiological signal sensing (RePSS) with relative low computational complexity.},
+   author = {Po Wei Huang and Bing Jhang Wu and Bing Fei Wu},
+   doi = {10.1109/JBHI.2020.3026481},
+   issn = {21682208},
+   issue = {5},
+   journal = {IEEE Journal of Biomedical and Health Informatics},
+   keywords = {Advanced driver assistance systems,heart rate monitoring,remote photoplethysmography},
+   month = {5},
+   pages = {1397-1408},
+   pmid = {32970601},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {A Heart Rate Monitoring Framework for Real-World Drivers Using Remote Photoplethysmography},
+   volume = {25},
+   year = {2021},
+}
+@book{Wang2022,
+   author = {Wenjin. Wang and Xuyu. Wang},
+   isbn = {9780128222812},
+   publisher = {Academic Press},
+   title = {Contactless vital signs monitoring},
+   year = {2022},
+}
+@web_page{,
+   title = {基于信号质量评估和卡尔曼滤波的心率估计算法-【维普期刊官网】- 中文期刊服务平台},
+   url = {http://qikan.cqvip.com/Qikan/Article/Detail?id=25943102&from=Qikan_Search_Index},
+}
+@article{Chen2015,
+   abstract = {Monitoring heart rates using conventional electrocardiogram equipment requires patients to wear adhesive gel patches or chest straps that can cause skin irritation and discomfort. Commercially available pulse oximetry sensors that attach to the fingertips or earlobes also cause inconvenience for patients and the spring-loaded clips can be painful to use. Therefore, a novel robust face-based heart rate monitoring technique is proposed to allow for the evaluation of heart rate variation without physical contact with the patient. Face reflectance is first decomposed from a single image and then heart rate evaluation is conducted from consecutive frames according to the periodic variation of reflectance strength resulting from changes to hemoglobin absorptivity across the visible light spectrum as heartbeats cause changes to blood volume in the blood vessels in the face. To achieve a robust evaluation, ensemble empirical mode decomposition of the Hilbert-Huang transform is used to acquire the primary heart rate signal while reducing the effect of ambient light changes. Our proposed approach is found to outperform the current state of the art, providing greater measurement accuracy with smaller variance and is shown to be feasible in real-world environments.},
+   author = {Duan Yu Chen and Jun Jhe Wang and Kuan Yi Lin and Hen Hong Chang and Han Kuei Wu and Yung Sheng Chen and Suh Yin Lee},
+   doi = {10.1109/JSEN.2014.2347397},
+   issn = {1530437X},
+   issue = {1},
+   journal = {IEEE Sensors Journal},
+   keywords = {Biomedical signal processing,Computer vision},
+   month = {1},
+   pages = {618-627},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {Image sensor-based heart rate evaluation from face reflectance using Hilbert-Huang transform},
+   volume = {15},
+   year = {2015},
+}
+@article{Xu2017,
+   abstract = {A novel framework based on partial least squares (PLS) and multivariate empirical mode decomposition (MEMD) is proposed to effectively evaluate heart rate from webcam videos captured during illumination changing conditions. The framework takes the assumption that both facial region of interest (ROI) and background ROI have the similar illumination variations and the background ROI can be treated as the denoising reference by using PLS to extract the underlying common illumination variation sources existing in both ROIs. Then, a number of intrinsic mode functions are decomposed by applying MEMD to the illumination-variation-suppressed facial ROI and the HR is evaluated. Compared to the experimental results obtained by the recently proposed independent component analysis and the ensemble empirical mode decomposition methods, the proposed method led to a better agreement with HR ground truth (the mean bias was 3.4 bpm with 95% limits of agreement ranging from-13.2 to 19.9 bpm), indicating a promising solution for the realistic HR estimation remotely.},
+   author = {L. Xu and J. Cheng and X. Chen},
+   doi = {10.1049/EL.2016.3611},
+   issn = {1350-911X},
+   issue = {4},
+   journal = {Electronics Letters},
+   keywords = {HR estimation,HR ground truth,background ROI,cameras,cardiology,denoising reference,facial region,heart rate,illumination,illumination variation interference suppression,image denoising,independent component analysis,interest,intrinsic mode functions,lighting,medical image processing,multivariate empirical mode decomposition,of,partial least squares,photoplethysmography,remote PPG,suppressed facial ROI,variation,video signal processing,webcam videos},
+   month = {2},
+   pages = {216-218},
+   publisher = {The Institution of Engineering and Technology},
+   title = {Illumination variation interference suppression in remote PPG using PLS and MEMD},
+   volume = {53},
+   url = {https://onlinelibrary.wiley.com/doi/full/10.1049/el.2016.3611 https://onlinelibrary.wiley.com/doi/abs/10.1049/el.2016.3611 https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/el.2016.3611},
+   year = {2017},
+}
+@article{Tarassenko2014,
+   abstract = {Remote sensing of the reflectance photoplethysmogram using a video camera typically positioned 1 m away from the patient's face is a promising method for monitoring the vital signs of patients without attaching any electrodes or sensors to them. Most of the papers in the literature on non-contact vital sign monitoring report results on human volunteers in controlled environments. We have been able to obtain estimates of heart rate and respiratory rate and preliminary results on changes in oxygen saturation from double-monitored patients undergoing haemodialysis in the Oxford Kidney Unit. To achieve this, we have devised a novel method of cancelling out aliased frequency components caused by artificial light flicker, using auto-regressive (AR) modelling and pole cancellation. Secondly, we have been able to construct accurate maps of the spatial distribution of heart rate and respiratory rate information from the coefficients of the AR model. In stable sections with minimal patient motion, the mean absolute error between the camera-derived estimate of heart rate and the reference value from a pulse oximeter is similar to the mean absolute error between two pulse oximeter measurements at different sites (finger and earlobe). The activities of daily living affect the respiratory rate, but the camera-derived estimates of this parameter are at least as accurate as those derived from a thoracic expansion sensor (chest belt). During a period of obstructive sleep apnoea, we tracked changes in oxygen saturation using the ratio of normalized reflectance changes in two colour channels (red and blue), but this required calibration against the reference data from a pulse oximeter. © 2014 Institute of Physics and Engineering in Medicine.},
+   author = {L. Tarassenko and M. Villarroel and A. Guazzi and J. Jorge and D. A. Clifton and C. Pugh},
+   doi = {10.1088/0967-3334/35/5/807},
+   issn = {0967-3334},
+   issue = {5},
+   journal = {Physiological Measurement},
+   keywords = {PPG,auto-regressive models,dialysis,non-contact monitoring,video,vital signs},
+   month = {3},
+   pages = {807},
+   pmid = {24681430},
+   publisher = {IOP Publishing},
+   title = {Non-contact video-based vital sign monitoring using ambient light and auto-regressive models},
+   volume = {35},
+   url = {https://iopscience.iop.org/article/10.1088/0967-3334/35/5/807 https://iopscience.iop.org/article/10.1088/0967-3334/35/5/807/meta},
+   year = {2014},
+}
+@article{Cheng2021,
+   abstract = {Noncontact and low-cost heart rate (HR) measurement based on imaging photoplethysmography (iPPG) technology is commonly desired for health care monitoring. However, the usually employed red-green-blue (RGB) cameras are sensitive to illumination variations and cannot work under dark situations. In this study, we propose a novel framework of applying joint blind source separation with delay-coordinate transformation (DCT-JBSS) to evaluate HR from a single-channel near-infrared (NIR) camera in dark situation. First, three facial regions of interest (ROIs) are determined by face detection technique and a single-channel signal is constructed through a frame-by-frame pixel averaging within each ROI. Second, each single-channel signal is transformed into time-delayed multichannel signal through DCT and then treated as a separate ROI signal set. Third, the three ROI signal sets are simultaneously processed by JBSS to derive the underlying shared HR source component vector (SCV), which is usually ordered the first and has the highest correlation across each signal set. Finally, the fast Fourier transform (FFT) is applied to the HR SCV and the corresponding dominant frequency (within the range from 0.7 to 2.5 Hz) with the highest signal-to-noise ratio (SNR) is determined as the target HR frequency. The proposed framework, as well as several other typical iPPG methods, is validated on public DROZY and MR-NIRP databases. The proposed method achieves the best performance, providing a probable way to widen the application of remote and continuous HR measurement during night conditions.},
+   author = {Juan Cheng and Ping Wang and Rencheng Song and Yu Liu and Chang Li and Yong Liu and Xun Chen},
+   doi = {10.1109/TIM.2020.3041083},
+   issn = {15579662},
+   journal = {IEEE Transactions on Instrumentation and Measurement},
+   keywords = {Delay-coordinate transformation (DCT),independent vector analysis (IVA),joint blind source separation (JBSS),near-infrared (NIR) video,noncontact heart rate (HR)},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {Remote Heart Rate Measurement from Near-Infrared Videos Based on Joint Blind Source Separation with Delay-Coordinate Transformation},
+   volume = {70},
+   year = {2021},
+}
+@article{,
+   abstract = {Heart rate is an important indicator of people's physiological state. Recently, several papers reported methods to measure heart rate remotely from face videos. Those methods work well on stationary subjects under well controlled conditions, but their performance significantly degrades if the videos are recorded under more challenging conditions, specifically when subjects' motions and illumination variations are involved. We propose a framework which utilizes face tracking and Normalized Least Mean Square adap-tive filtering methods to counter their influences. We test our framework on a large difficult and public database MAHNOB-HCI and demonstrate that our method substantially outperforms all previous methods. We also use our method for long term heart rate monitoring in a game evaluation scenario and achieve promising results.},
+   author = {Xiaobai Li and Jie Chen and Guoying Zhao and Matti Pietikäinen},
+   title = {Remote Heart Rate Measurement From Face Videos Under Realistic Situations},
+}
+@article{Li2014,
+   abstract = {Heart rate is an important indicator of people's physiological state. Recently, several papers reported methods to measure heart rate remotely from face videos. Those methods work well on stationary subjects under well controlled conditions, but their performance significantly degrades if the videos are recorded under more challenging conditions, specifically when subjects' motions and illumination variations are involved. We propose a framework which utilizes face tracking and Normalized Least Mean Square adaptive filtering methods to counter their influences. We test our framework on a large difficult and public database MAHNOB-HCI and demonstrate that our method substantially outperforms all previous methods. We also use our method for long term heart rate monitoring in a game evaluation scenario and achieve promising results.},
+   author = {Xiaobai Li and Jie Chen and Guoying Zhao and Matti Pietikäinen},
+   doi = {10.1109/CVPR.2014.543},
+   isbn = {9781479951178},
+   issn = {10636919},
+   journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+   month = {9},
+   pages = {4264-4271},
+   publisher = {IEEE Computer Society},
+   title = {Remote heart rate measurement from face videos under realistic situations},
+   year = {2014},
+}
+@article{Chen2019,
+   abstract = {Heart rate (HR) estimation and monitoring is of great importance to determine a person's physiological and mental status. Recently, it has been demonstrated that HR can be remotely retrieved from facial video-based photoplethys-mographic signals captured using professional or consumer-level cameras. Many efforts have been made to improve the detection accuracy of this noncontact technique. This paper presents a timely, systematic survey on such video-based remote HR measurement approaches, with a focus on recent advancements that overcome dominating technical challenges arising from illumination variations and motion artifacts. Representative methods up to date are comparatively summarized with respect to their principles, pros, and cons under different conditions. Future prospects of this promising technique are discussed and potential research directions are described. We believe that such a remote HR measurement technique, taking advantages of unobtrusiveness while providing comfort and convenience, will be beneficial for many healthcare applications. Index Terms-Facial video, heart rate (HR), noncontact, region of interest (ROI), remote photoplethysmography (rPPG).},
+   author = {Xun Chen and Juan Cheng and Rencheng Song and Yu Liu and Rabab Ward and Z Jane Wang},
+   doi = {10.1109/TIM.2018.2879706},
+   issue = {10},
+   journal = {IEEE TRANSACTIONS ON INSTRUMENTATION AND MEASUREMENT},
+   title = {Video-Based Heart Rate Measurement: Recent Advances and Future Prospects},
+   volume = {68},
+   url = {http://www.ieee.org/publications_standards/publications/rights/index.html},
+   year = {2019},
+}
+@article{Rong2021,
+   author = {Yu Rong and Panagiotis C Theofanopoulos and Georgios C Trichopoulos and Daniel W Bliss},
+   doi = {10.21203/rs.3.rs-1109431/v1},
+   keywords = {Radar Based Pulse Detection,Terahertz-Wave-Plethysmography (TPG),frequency band,non-contact cardiac sensing application},
+   title = {Terahertz-Wave-Plethysmography (TPG): A New Principle of Radar Based Pulse Detection},
+   url = {https://doi.org/10.21203/rs.3.rs-1109431/v1},
+   year = {2021},
+}
+@article{Yu2021,
+   abstract = {Remote photoplethysmography (rPPG), which aims at measuring heart activities
+and physiological signals from facial video without any contact, has great
+potential in many applications (e.g., remote healthcare and affective
+computing). Recent deep learning approaches focus on mining subtle rPPG clues
+using convolutional neural networks with limited spatio-temporal receptive
+fields, which neglect the long-range spatio-temporal perception and interaction
+for rPPG modeling. In this paper, we propose the PhysFormer, an end-to-end
+video transformer based architecture, to adaptively aggregate both local and
+global spatio-temporal features for rPPG representation enhancement. As key
+modules in PhysFormer, the temporal difference transformers first enhance the
+quasi-periodic rPPG features with temporal difference guided global attention,
+and then refine the local spatio-temporal representation against interference.
+Furthermore, we also propose the label distribution learning and a curriculum
+learning inspired dynamic constraint in frequency domain, which provide
+elaborate supervisions for PhysFormer and alleviate overfitting. Comprehensive
+experiments are performed on four benchmark datasets to show our superior
+performance on both intra- and cross-dataset testings. One highlight is that,
+unlike most transformer networks needed pretraining from large-scale datasets,
+the proposed PhysFormer can be easily trained from scratch on rPPG datasets,
+which makes it promising as a novel transformer baseline for the rPPG
+community. The codes will be released at
+https://github.com/ZitongYu/PhysFormer.},
+   author = {Zitong Yu and Yuming Shen and Jingang Shi and Hengshuang Zhao and Philip Torr and Guoying Zhao},
+   month = {11},
+   title = {PhysFormer: Facial Video-based Physiological Measurement with Temporal Difference Transformer},
+   url = {https://arxiv.org/abs/2111.12082v1},
+   year = {2021},
+}
+@article{,
+   title = {henriques_phd},
+}
+@article{,
+   abstract = {Adapting deep networks to new concepts from a few examples is challenging, due to the high computational requirements of standard fine-tuning procedures. Most work on few-shot learning has thus focused on simple learning techniques for adaptation, such as nearest neighbours or gradient descent. Nonetheless, the machine learning literature contains a wealth of methods that learn non-deep models very efficiently. In this paper, we propose to use these fast convergent methods as the main adaptation mechanism for few-shot learning. The main idea is to teach a deep network to use standard machine learning tools, such as ridge regression, as part of its own internal model, enabling it to quickly adapt to novel data. This requires back-propagating errors through the solver steps. While normally the cost of the matrix operations involved in such a process would be significant, by using the Woodbury identity we can make the small number of examples work to our advantage. We propose both closed-form and iterative solvers, based on ridge regression and logistic regression components. Our methods constitute a simple and novel approach to the problem of few-shot learning and achieve performance competitive with or superior to the state of the art on three benchmarks.},
+   author = {Luca Bertinetto and João Henriques and Philip H S Torr and Andrea Vedaldi},
+   title = {META-LEARNING WITH DIFFERENTIABLE CLOSED-FORM SOLVERS},
+}
+@article{,
+   author = {Daniel Mcduff},
+   keywords = {acm reference format,and daniel,datasets,datasets, neural networks, gaze detection, text ta,gaze detection,josh fromm,neural networks,shwetak patel,text tagging,xin liu,xuhai xu,ziheng jiang},
+   title = {MetaPhys : Few-Shot Adaptation for Non-Contact Physiological Measurement},
+}
+@article{,
+   author = {Sergey Tulyakov and Xavier Alameda-pineda and Elisa Ricci and Lijun Yin and Jeffrey F Cohn and Nicu Sebe and Via Sommarive and Fondazione Bruno Kessler and Via Sommarive},
+   note = {rPPG},
+   title = {Self-Adaptive Matrix Completion for Heart Rate Estimation from Face Videos under Realistic Conditions},
+}
+@article{Estepp2014,
+   author = {Justin R Estepp and Ethan B Blackford and Christopher M Meier},
+   isbn = {9781479938407},
+   keywords = {blind,imaging photoplethysmography,pulse rate},
+   pages = {1462-1469},
+   title = {Recovering Pulse Rate During Motion Artifact with a Multi-Imager Array for Non-Contact Imaging Photoplethysmography},
+   volume = {940},
+   year = {2014},
+}
+@article{Chen2018,
+   abstract = {Non-contact video-based physiological measurement has many applications in health care and human-computer interaction. Practical applications require measurements to be accurate even in the presence of large head rotations. We propose the first end-to-end system for video-based measurement of heart and breathing rate using a deep convolutional network. The system features a new motion representation based on a skin reflection model and a new attention mechanism using appearance information to guide motion estimation, both of which enable robust measurement under heterogeneous lighting and major motions. Our approach significantly outperforms all current state-of-the-art methods on both RGB and infrared video datasets. Furthermore, it allows spatial-temporal distributions of physiological signals to be visualized via the attention mechanism.},
+   author = {Weixuan Chen and Daniel McDuff},
+   journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+   month = {5},
+   pages = {356-373},
+   publisher = {Springer Verlag},
+   title = {DeepPhys: Video-Based Physiological Measurement Using Convolutional Attention Networks},
+   volume = {11206 LNCS},
+   url = {http://arxiv.org/abs/1805.07888},
+   year = {2018},
+}
+@article{McDuff2020,
+   abstract = {Non-contact physiological measurement has the potential to provide low-cost, non-invasive health monitoring. However, machine vision approaches are often limited by the availability and diversity of annotated video datasets resulting in poor generalization to complex real-life conditions. To address these challenges, this work proposes the use of synthetic avatars that display facial blood flow changes and allow for systematic generation of samples under a wide variety of conditions. Our results show that training on both simulated and real video data can lead to performance gains under challenging conditions. We show state-of-the-art performance on three large benchmark datasets and improved robustness to skin type and motion.},
+   author = {Daniel McDuff and Javier Hernandez and Erroll Wood and Xin Liu and Tadas Baltrusaitis},
+   month = {10},
+   note = {生成数据集},
+   title = {Advancing Non-Contact Vital Sign Measurement using Synthetic Avatars},
+   url = {http://arxiv.org/abs/2010.12949},
+   year = {2020},
+}
+@article{Huang2021,
+   abstract = {Remote photo-plethysmography (rPPG) uses a camera to estimate a person’s heart rate (HR). Similar to how heart rate can provide useful information about a person’s vital signs, insights about the underlying physio/psychological conditions can be obtained from heart rate variability (HRV). HRV is a measure of the fine fluctuations in the intervals between heart beats. However, this measure requires temporally locating heart beats with a high degree of precision. We introduce a refined and efficient real-time rPPG pipeline with novel filtering and motion suppression that not only estimates heart rates, but also extracts the pulse waveform to time heart beats and measure heart rate variability. This unsupervised method requires no rPPG specific training and is able to operate in real-time. We also introduce a new multi-modal video dataset, VicarPPG 2, specifically designed to evaluate rPPG algorithms on HR and HRV estimation. We validate and study our method under various conditions on a comprehensive range of public and self-recorded datasets, showing state-of-the-art results and providing useful insights into some unique aspects. Lastly, we make available CleanerPPG, a collection of human-verified ground truth peak/heart-beat annotations for existing rPPG datasets. These verified annotations should make future evaluations and benchmarking of rPPG algorithms more accurate, standardized and fair.},
+   author = {Bin Huang and Chun-Liang Lin and Weihai Chen and Chia-Feng Juang and Xingming Wu},
+   doi = {10.1016/j.bspc.2020.102387},
+   issn = {17468094},
+   issue = {23},
+   journal = {Biomedical Signal Processing and Control},
+   month = {4},
+   pages = {102387},
+   title = {A novel one-stage framework for visual pulse rate estimation using deep neural networks},
+   volume = {66},
+   url = {https://www.mdpi.com/2076-3417/10/23/8630 https://linkinghub.elsevier.com/retrieve/pii/S1746809420304936},
+   year = {2021},
+}
+@article{Wang2017,
+   abstract = {This paper introduces a mathematical model that incorporates the pertinent optical and physiological properties of skin reflections with the objective to increase our understanding of the algorithmic principles behind remote photoplethysmography (rPPG). The model is used to explain the different choices that were made in existing rPPG methods for pulse extraction. The understanding that comes from the model can be used to design robust or application-specific rPPG solutions. We illustrate this by designing an alternative rPPG method, where a projection plane orthogonal to the skin tone is used for pulse extraction. A large benchmark on the various discussed rPPG methods shows that their relative merits can indeed be understood from the proposed model.},
+   author = {Wenjin Wang and Albertus C. Den Brinker and Sander Stuijk and Gerard De Haan},
+   doi = {10.1109/TBME.2016.2609282},
+   issn = {15582531},
+   issue = {7},
+   journal = {IEEE Transactions on Biomedical Engineering},
+   keywords = {Biomedical monitoring,colors,photoplethysmography,remote sensing},
+   month = {7},
+   pages = {1479-1491},
+   pmid = {28113245},
+   publisher = {IEEE Computer Society},
+   title = {Algorithmic Principles of Remote PPG},
+   volume = {64},
+   year = {2017},
+}
+@article{Gudi2020,
+   abstract = {Remote photo-plethysmography (rPPG) uses a camera to estimate a person’s heart rate (HR). Similar to how heart rate can provide useful information about a person’s vital signs, insights about the underlying physio/psychological conditions can be obtained from heart rate variability (HRV). HRV is a measure of the fine fluctuations in the intervals between heart beats. However, this measure requires temporally locating heart beats with a high degree of precision. We introduce a refined and efficient real-time rPPG pipeline with novel filtering and motion suppression that not only estimates heart rates, but also extracts the pulse waveform to time heart beats and measure heart rate variability. This unsupervised method requires no rPPG specific training and is able to operate in real-time. We also introduce a new multi-modal video dataset, VicarPPG 2, specifically designed to evaluate rPPG algorithms on HR and HRV estimation. We validate and study our method under various conditions on a comprehensive range of public and self-recorded datasets, showing state-of-the-art results and providing useful insights into some unique aspects. Lastly, we make available CleanerPPG, a collection of human-verified ground truth peak/heart-beat annotations for existing rPPG datasets. These verified annotations should make future evaluations and benchmarking of rPPG algorithms more accurate, standardized and fair.},
+   author = {Amogh Gudi and Marian Bittner and Jan van Gemert},
+   doi = {10.3390/app10238630},
+   issn = {2076-3417},
+   issue = {23},
+   journal = {Applied Sciences},
+   month = {12},
+   note = {列举了一些数据集},
+   title = {Real-Time Webcam Heart-Rate and Variability Estimation with Clean Ground Truth for Evaluation},
+   volume = {10},
+   year = {2020},
+}
+@article{Bobbia2019,
+   abstract = {Segmentation is a critical step for many algorithms, especially for remote photoplethysmography (rPPG)applications as only the skin surface provides information. Moreover, it has been shown that the rPPG signal is not distributed homogeneously across the skin. Most of the time, algorithms get input information from face detection provided by a supervised learning of physical appearance and skin pixel selection. However, both methods show several limitations. In this paper, we propose a simple approach to implicitly select skin tissues based on their distinct pulsatility feature. The input video frames are decomposed into several temporal superpixels from which the pulse signals are extracted. A pulsatility measure from each temporal superpixel is then used to merge the pulse traces and estimate the photoplethysmogram signal. Since the most pulsatile signals provide high quality information, areas where the information is predominant are favored. We evaluated our contribution using a new publicly available dataset dedicated to rPPG algorithms comparison. The results of our experiments show that our method outperforms state of the art algorithms, without any critical face or skin detection.},
+   author = {Serge Bobbia and Richard Macwan and Yannick Benezeth and Alamin Mansouri and Julien Dubois},
+   doi = {10.1016/j.patrec.2017.10.017},
+   issn = {01678655},
+   journal = {Pattern Recognition Letters},
+   keywords = {Image processing,Living skin tissue segmentation,Remote photoplethysmography,Unsupervised},
+   month = {6},
+   pages = {82-90},
+   publisher = {Elsevier B.V.},
+   title = {Unsupervised skin tissue segmentation for remote photoplethysmography},
+   volume = {124},
+   year = {2019},
+}
+@article{Bobbia2019,
+   abstract = {Segmentation is a critical step for many algorithms, especially for remote photoplethysmography (rPPG)applications as only the skin surface provides information. Moreover, it has been shown that the rPPG signal is not distributed homogeneously across the skin. Most of the time, algorithms get input information from face detection provided by a supervised learning of physical appearance and skin pixel selection. However, both methods show several limitations. In this paper, we propose a simple approach to implicitly select skin tissues based on their distinct pulsatility feature. The input video frames are decomposed into several temporal superpixels from which the pulse signals are extracted. A pulsatility measure from each temporal superpixel is then used to merge the pulse traces and estimate the photoplethysmogram signal. Since the most pulsatile signals provide high quality information, areas where the information is predominant are favored. We evaluated our contribution using a new publicly available dataset dedicated to rPPG algorithms comparison. The results of our experiments show that our method outperforms state of the art algorithms, without any critical face or skin detection.},
+   author = {Serge Bobbia and Richard Macwan and Yannick Benezeth and Alamin Mansouri and Julien Dubois},
+   doi = {10.1016/j.patrec.2017.10.017},
+   issn = {01678655},
+   journal = {Pattern Recognition Letters},
+   keywords = {Image processing,Living skin tissue segmentation,Remote photoplethysmography,Unsupervised},
+   month = {6},
+   pages = {82-90},
+   publisher = {Elsevier B.V.},
+   title = {Unsupervised skin tissue segmentation for remote photoplethysmography},
+   volume = {124},
+   url = {https://linkinghub.elsevier.com/retrieve/pii/S0167865517303860},
+   year = {2019},
+}
+@inproceedings{Niu2018,
+   abstract = {Remote photoplethysmography (rPPG) based noncontact heart rate (HR) measurement from a face video has drawn increasing attention recently because of its potential applications in many scenarios such as training aid, health monitoring, and nursing care. Although a number of methods have been proposed, most of them are designed under certain assumptions and could fail when such assumptions do not hold. At the same time, while deep learning based methods have been reported to achieve promising results in many computer vision tasks, their use in rPPG-based heart rate estimation has been limited due to the very limited data available in public domain. To overcome this limitation and leverage the strong modeling ability of deep neural networks, in this paper, we propose a novel spatial-temporal representation for the HR signal and design a general-to-specific transfer learning strategy to train a deep heart rate estimator from a large volume of synthetic rhythm signals and a limited number of available face video data. Experiment results on the public-domain databases show the effectiveness of the proposed approach.},
+   author = {Xuesong Niu and Hu Han and Shiguang Shan and Xilin Chen},
+   doi = {10.1109/ICPR.2018.8546321},
+   isbn = {9781538637883},
+   issn = {10514651},
+   journal = {Proceedings - International Conference on Pattern Recognition},
+   month = {11},
+   pages = {3580-3585},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {SynRhythm: Learning a Deep Heart Rate Estimator from General to Specific},
+   volume = {2018-Augus},
+   year = {2018},
+}
+@article{Lee2020,
+   abstract = {Remote heart rate estimation is the measurement of heart rate without any physical contact with the subject and is accomplished using remote photoplethysmography (rPPG) in this work. rPPG signals are usually collected using a video camera with a limitation of being sensitive to multiple contributing factors, e.g. variation in skin tone, lighting condition and facial structure. End-to-end supervised learning approach performs well when training data is abundant, covering a distribution that doesn't deviate too much from the distribution of testing data or during deployment. To cope with the unforeseeable distributional changes during deployment, we propose a transductive meta-learner that takes unlabeled samples during testing (deployment) for a self-supervised weight adjustment (also known as transductive inference), providing fast adaptation to the distributional changes. Using this approach, we achieve state-of-the-art performance on MAHNOB-HCI and UBFC-rPPG.},
+   author = {Eugene Lee and Evan Chen and Chen-Yi Lee},
+   keywords = {Remote heart rate estimation,meta-learning,rPPG,trans-ductive inference},
+   month = {7},
+   title = {Meta-rPPG: Remote Heart Rate Estimation Using a Transductive Meta-Learner},
+   url = {http://arxiv.org/abs/2007.06786 https://github.com/eugenelet/Meta-rPPG},
+   year = {2020},
+}
+@inproceedings{Artemyev2020,
+   abstract = {This paper introduces the Neurodata Lab's approach presented at the 1st Challenge on Remote Physiological Signal Sensing (RePSS) organized within CVPR2020. The RePSS challenge was focused on measuring the average heart rate from color facial videos, which is one of the most fundamental problems in the field of computer vision.Our deep learning-based approach includes 3D spatiotemporal attention convolutional neural network for photoplethysmogram extraction and 1D convolutional neural network pre-trained on synthetic data for time series analysis. It provides state-of-the-art results outperforming those of other participants on a mixture of VIPL and OBF databases: MAE=6.94 (12.3% improvement compared to the top-2 result), RMSE=10.68 (24.6% improvement), Pearson R = 0.755 (28.2% improvement).},
+   author = {Mikhail Artemyev and Marina Churikova and Mikhail Grinenko and Olga Perepelkina},
+   doi = {10.1109/CVPRW50498.2020.00166},
+   isbn = {9781728193601},
+   issn = {21607516},
+   journal = {IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops},
+   month = {6},
+   pages = {1282-1288},
+   publisher = {IEEE Computer Society},
+   title = {Neurodata lab's approach to the challenge on computer vision for physiological measurement},
+   volume = {2020-June},
+   year = {2020},
+}
+@inproceedings{Perepelkina2020,
+   abstract = {Detection and continuous monitoring of heart rate can help us identify clinical relevance of some cardiac symptoms. Over the last decade, a lot of attention has been paid to the development of the algorigthms for remote photoplethysmography (rPPG). As a result, we can now accurately monitor heart rate of still sitting subjects using data extracted from video feed. Aside from methods based on hand-crafted features, there have also been developed the more advanced learning-based rPPG algorithms. Deep learning methods usually require large amounts of data for training, however, biomedical data often suffers from lack of real-life data. To address these issues, we have developed a HeartTrack convolutional neural network for remote video-based heart rate tracking. This learning-based method has been trained on synthetic data to accurately estimate heart rate in different conditions. Moreover, here we provide two new rPPG datasets - MoLi-ppg-1 and MoLi-ppg-2 - that were recorded in complicated conditions that were close to the natural ones. The datasets include videos that feature moving and talking subjects, different types of lighting, various equipment, etc. We have used our new MoLi-ppg-1 and MoLi-ppg-2 datasets for algorithm training and testing, and the existing UBFCRPPG dataset for the algorithm testing and comparison with other approaches. Our HeartTrack neural network shows state-of-the-art results on the UBFC-RPPG database (MAE=2.412, RMSE=3.368, R=0.983).},
+   author = {Olga Perepelkina and Mikhail Artemyev and Marina Churikova and Mikhail Grinenko},
+   doi = {10.1109/CVPRW50498.2020.00152},
+   isbn = {9781728193601},
+   issn = {21607516},
+   journal = {IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops},
+   month = {6},
+   pages = {1163-1171},
+   publisher = {IEEE Computer Society},
+   title = {HeartTrack: Convolutional neural network for remote video-based heart rate monitoring},
+   volume = {2020-June},
+   year = {2020},
+}
+@article{Wang2017,
+   abstract = {This paper introduces a mathematical model that incorporates the pertinent optical and physiological properties of skin reflections with the objective to increase our understanding of the algorithmic principles behind remote photoplethysmography (rPPG). The model is used to explain the different choices that were made in existing rPPG methods for pulse extraction. The understanding that comes from the model can be used to design robust or application-specific rPPG solutions. We illustrate this by designing an alternative rPPG method, where a projection plane orthogonal to the skin tone is used for pulse extraction. A large benchmark on the various discussed rPPG methods shows that their relative merits can indeed be understood from the proposed model.},
+   author = {Wenjin Wang and Albertus C. Den Brinker and Sander Stuijk and Gerard De Haan},
+   doi = {10.1109/TBME.2016.2609282},
+   issn = {15582531},
+   issue = {7},
+   journal = {IEEE Transactions on Biomedical Engineering},
+   keywords = {Biomedical monitoring,colors,photoplethysmography,remote sensing},
+   month = {7},
+   note = {POS},
+   pages = {1479-1491},
+   pmid = {28113245},
+   publisher = {IEEE Computer Society},
+   title = {Algorithmic Principles of Remote PPG},
+   volume = {64},
+   year = {2017},
+}
+@article{,
+   abstract = {Remote photoplethysmography (rPPG) enables contactless monitoring of the blood volume pulse using a regular camera. Recent research focused on improved motion robustness, but the proposed blind source separation techniques (BSS) in RGB color space show limited success. We present an analysis of the motion problem, from which far superior chrominance-based methods emerge. For a population of 117 stationary subjects, we show our methods to perform in 92% good agreement (±1.96σ) with contact PPG, with RMSE and standard deviation both a factor of 2 better than BSS-based methods. In a fitness setting using a simple spectral peak detector, the obtained pulse-rate for modest motion (bike) improves from 79% to 98% correct, and for vigorous motion (stepping) from less than 11% to more than 48% correct. We expect the greatly improved robustness to considerably widen the application scope of the technology. © 1964-2012 IEEE.},
+   author = {Gerard De Haan and Vincent Jeanne},
+   doi = {10.1109/TBME.2013.2266196},
+   issn = {00189294},
+   issue = {10},
+   journal = {IEEE Transactions on Biomedical Engineering},
+   keywords = {Biomedical monitoring,image analysis,photoplethysmography (PPG),remote sensing},
+   pages = {2878-2886},
+   pmid = {23744659},
+   title = {Robust pulse rate from chrominance-based rPPG},
+   volume = {60},
+   year = {2013},
+}
+@generic{Liu2020,
+   abstract = {Telehealth and remote health monitoring have become increasingly important during the SARS-CoV-2 pandemic and it is widely expected that this will have a lasting impact on healthcare practices. These tools can help reduce the risk of exposing patients and medical staff to infection, make healthcare services more accessible, and allow providers to see more patients. However, objective measurement of vital signs is challenging without direct contact with a patient. We present a video-based and on-device optical cardiopulmonary vital sign measurement approach. It leverages a novel multi-task temporal shift convolutional attention network (MTTS-CAN) and enables real-time cardiovascular and respiratory measurements on mobile platforms. We evaluate our system on an ARM CPU and achieve state-of-the-art accuracy while running at over 150 frames per second which enables real-time applications. Systematic experimentation on large benchmark datasets reveals that our approach leads to substantial (20%-50%) reductions in error and generalizes well across datasets.},
+   author = {Xin Liu and Josh Fromm and Shwetak Patel and Daniel McDuff},
+   journal = {arXiv},
+   month = {6},
+   note = {两个分支<br/>- TSM 时移建模，给噪声和运动建模<br/>- 使用注意力机制CAN<br/>- CNN提取面部空间特征},
+   publisher = {arXiv},
+   title = {Multi-Task Temporal Shift Attention Networks for On-Device Contactless Vitals Measurement},
+   url = {https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cardiac-monitor-guidance-},
+   year = {2020},
+}
+@article{Yu2020,
+   abstract = {Remote photoplethysmography (rPPG), which aims at measuring heart activities without any contact, has great potential in many applications (e.g., remote healthcare). Existing end-to-end rPPG and heart rate (HR) measurement methods from facial videos are vulnerable to the less-constrained scenarios (e.g., with head movement and bad illumination). In this letter, we explore the reason why existing end-to-end networks perform poorly in challenging conditions and establish a strong end-to-end baseline (AutoHR) for remote HR measurement with neural architecture search (NAS). The proposed method includes three parts: 1) a powerful searched backbone with novel Temporal Difference Convolution (TDC), intending to capture intrinsic rPPG-aware clues between frames; 2) a hybrid loss function considering constraints from both time and frequency domains; and 3) spatio-temporal data augmentation strategies for better representation learning. Comprehensive experiments are performed on three benchmark datasets to show our superior performance on both intra- and cross-dataset testing.},
+   author = {Zitong Yu and Xiaobai Li and Xuesong Niu and Jingang Shi and Guoying Zhao},
+   doi = {10.1109/LSP.2020.3007086},
+   journal = {IEEE Signal Processing Letters},
+   keywords = {RPPG,heart rate,neural architecture search},
+   month = {4},
+   pages = {1245-1249},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {AutoHR: A Strong End-to-end Baseline for Remote Heart Rate Measurement with Neural Searching},
+   volume = {27},
+   url = {http://arxiv.org/abs/2004.12292 http://dx.doi.org/10.1109/LSP.2020.3007086},
+   year = {2020},
+}

@@ -29,7 +29,7 @@ Trends in rPPG. Coming soon...
 |https://github.com/ubicomplab/rPPG-Toolbox| https://arxiv.org/abs/2210.00716                   |
 
 # Paper
-todo
+[paper](export.bib)
 
 # Training Framework
 https://github.com/Z-Xiong/torchrppg \
